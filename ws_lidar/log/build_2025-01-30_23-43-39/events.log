@@ -1,0 +1,195 @@
+[0.000000] (-) TimerEvent: {}
+[0.001790] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.002300] (object_avoidance) JobQueued: {'identifier': 'object_avoidance', 'dependencies': OrderedDict()}
+[0.002484] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.002568] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.051494] (object_avoidance) JobStarted: {'identifier': 'object_avoidance'}
+[0.101477] (-) TimerEvent: {}
+[0.113412] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.201935] (-) TimerEvent: {}
+[0.304045] (-) TimerEvent: {}
+[0.405511] (-) TimerEvent: {}
+[0.506454] (-) TimerEvent: {}
+[0.607315] (-) TimerEvent: {}
+[0.708456] (-) TimerEvent: {}
+[0.809345] (-) TimerEvent: {}
+[0.910071] (-) TimerEvent: {}
+[1.010909] (-) TimerEvent: {}
+[1.111598] (-) TimerEvent: {}
+[1.212272] (-) TimerEvent: {}
+[1.312963] (-) TimerEvent: {}
+[1.413687] (-) TimerEvent: {}
+[1.514537] (-) TimerEvent: {}
+[1.615452] (-) TimerEvent: {}
+[1.716959] (-) TimerEvent: {}
+[1.818732] (-) TimerEvent: {}
+[1.919442] (-) TimerEvent: {}
+[2.020162] (-) TimerEvent: {}
+[2.121085] (-) TimerEvent: {}
+[2.222161] (-) TimerEvent: {}
+[2.322846] (-) TimerEvent: {}
+[2.423545] (-) TimerEvent: {}
+[2.524326] (-) TimerEvent: {}
+[2.625075] (-) TimerEvent: {}
+[2.725776] (-) TimerEvent: {}
+[2.826564] (-) TimerEvent: {}
+[2.927321] (-) TimerEvent: {}
+[3.028060] (-) TimerEvent: {}
+[3.128954] (-) TimerEvent: {}
+[3.230237] (-) TimerEvent: {}
+[3.259607] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[3.264634] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[3.267446] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cewan/ws_lidar/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/cewan/ws_lidar/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cewan'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cewan'), ('OLDPWD', '/home/cewan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1246'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cewan/ws_lidar/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cewan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cewan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cewan-desktop:@/tmp/.ICE-unix/1222,unix/cewan-desktop:/tmp/.ICE-unix/1222'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4baeba2a_2413_446e_b2f8_cf92e1df8ec0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UWSX02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cewan/ws_lidar/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble')]), 'shell': False}
+[3.330824] (-) TimerEvent: {}
+[3.436855] (-) TimerEvent: {}
+[3.545404] (-) TimerEvent: {}
+[3.648587] (-) TimerEvent: {}
+[3.700593] (sllidar_ros2) StdoutLine: {'line': b'[ 90%] Built target sllidar_node\n'}
+[3.752454] (-) TimerEvent: {}
+[3.757643] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_client\n'}
+[3.832834] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[3.839368] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[3.852815] (-) TimerEvent: {}
+[3.910719] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cewan/ws_lidar/build/sllidar_ros2'], 'cwd': '/home/cewan/ws_lidar/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cewan'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cewan'), ('OLDPWD', '/home/cewan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1246'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cewan/ws_lidar/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cewan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cewan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cewan-desktop:@/tmp/.ICE-unix/1222,unix/cewan-desktop:/tmp/.ICE-unix/1222'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4baeba2a_2413_446e_b2f8_cf92e1df8ec0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UWSX02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cewan/ws_lidar/build/sllidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble')]), 'shell': False}
+[3.954468] (-) TimerEvent: {}
+[4.003379] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.006786] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.015266] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[4.017332] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py\n'}
+[4.019125] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py\n'}
+[4.020910] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py\n'}
+[4.022317] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[4.024025] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py\n'}
+[4.033381] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[4.041638] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[4.046337] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[4.055066] (-) TimerEvent: {}
+[4.062155] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[4.065836] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py\n'}
+[4.073261] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[4.073892] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py\n'}
+[4.074849] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py\n'}
+[4.075885] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py\n'}
+[4.076935] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py\n'}
+[4.078053] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[4.079165] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py\n'}
+[4.079846] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[4.080261] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[4.080792] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[4.081340] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[4.081993] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py\n'}
+[4.082553] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[4.082955] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[4.083501] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[4.084027] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[4.084615] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[4.085431] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[4.086177] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[4.086754] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[4.087397] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[4.087948] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[4.088442] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[4.089338] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[4.090185] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[4.090809] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[4.091374] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[4.135195] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[4.137986] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.140665] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.145717] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[4.150641] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[4.154588] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cewan/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[4.155702] (-) TimerEvent: {}
+[4.172701] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[4.255870] (-) TimerEvent: {}
+[4.299805] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[4.356711] (-) TimerEvent: {}
+[4.457615] (-) TimerEvent: {}
+[4.559241] (-) TimerEvent: {}
+[4.661426] (-) TimerEvent: {}
+[4.762203] (-) TimerEvent: {}
+[4.862928] (-) TimerEvent: {}
+[4.963699] (-) TimerEvent: {}
+[5.064468] (-) TimerEvent: {}
+[5.167060] (-) TimerEvent: {}
+[5.267869] (-) TimerEvent: {}
+[5.368642] (-) TimerEvent: {}
+[5.469499] (-) TimerEvent: {}
+[5.570463] (-) TimerEvent: {}
+[5.671493] (-) TimerEvent: {}
+[5.775376] (-) TimerEvent: {}
+[5.880038] (-) TimerEvent: {}
+[5.944805] (lidar) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar', 'build', '--build-base', '/home/cewan/ws_lidar/build/lidar/build', 'install', '--record', '/home/cewan/ws_lidar/build/lidar/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/ws_lidar/src/lidar', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1246', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/cewan/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cewan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cewan-desktop:@/tmp/.ICE-unix/1222,unix/cewan-desktop:/tmp/.ICE-unix/1222', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4baeba2a_2413_446e_b2f8_cf92e1df8ec0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UWSX02', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cewan/ws_lidar/build/lidar', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/ws_lidar/build/lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cewan/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[5.981101] (-) TimerEvent: {}
+[6.084239] (-) TimerEvent: {}
+[6.101625] (object_avoidance) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/object_avoidance', 'build', '--build-base', '/home/cewan/ws_lidar/build/object_avoidance/build', 'install', '--record', '/home/cewan/ws_lidar/build/object_avoidance/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/ws_lidar/src/object_avoidance', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1246', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/cewan/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cewan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cewan-desktop:@/tmp/.ICE-unix/1222,unix/cewan-desktop:/tmp/.ICE-unix/1222', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4baeba2a_2413_446e_b2f8_cf92e1df8ec0', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UWSX02', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cewan/ws_lidar/install/sllidar_ros2:/home/cewan/ws_lidar/install/object_avoidance:/home/cewan/ws_lidar/install/lidar:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cewan/ws_lidar/build/object_avoidance', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cewan/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[6.184410] (-) TimerEvent: {}
+[6.285631] (-) TimerEvent: {}
+[6.386443] (-) TimerEvent: {}
+[6.487674] (-) TimerEvent: {}
+[6.588612] (-) TimerEvent: {}
+[6.689371] (-) TimerEvent: {}
+[6.790113] (-) TimerEvent: {}
+[6.890843] (-) TimerEvent: {}
+[6.996693] (-) TimerEvent: {}
+[7.097512] (-) TimerEvent: {}
+[7.198285] (-) TimerEvent: {}
+[7.298976] (-) TimerEvent: {}
+[7.399664] (-) TimerEvent: {}
+[7.500430] (-) TimerEvent: {}
+[7.601251] (-) TimerEvent: {}
+[7.648333] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[7.652093] (lidar) StdoutLine: {'line': b'writing ../../build/lidar/lidar.egg-info/PKG-INFO\n'}
+[7.654824] (lidar) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt\n'}
+[7.655959] (lidar) StdoutLine: {'line': b'writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt\n'}
+[7.656894] (lidar) StdoutLine: {'line': b'writing requirements to ../../build/lidar/lidar.egg-info/requires.txt\n'}
+[7.657808] (lidar) StdoutLine: {'line': b'writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt\n'}
+[7.669378] (lidar) StdoutLine: {'line': b"reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[7.673195] (lidar) StdoutLine: {'line': b"writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[7.673847] (lidar) StdoutLine: {'line': b'running build\n'}
+[7.674344] (lidar) StdoutLine: {'line': b'running build_py\n'}
+[7.680860] (lidar) StdoutLine: {'line': b'running install\n'}
+[7.681622] (lidar) StdoutLine: {'line': b'running install_lib\n'}
+[7.690364] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[7.691982] (lidar) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.700788] (lidar) StdoutLine: {'line': b"removing '/home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.701409] (-) TimerEvent: {}
+[7.703043] (lidar) StdoutLine: {'line': b'Copying ../../build/lidar/lidar.egg-info to /home/cewan/ws_lidar/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info\n'}
+[7.709052] (lidar) StdoutLine: {'line': b'running install_scripts\n'}
+[7.773569] (object_avoidance) StdoutLine: {'line': b'running egg_info\n'}
+[7.778051] (object_avoidance) StdoutLine: {'line': b'writing ../../build/object_avoidance/object_avoidance.egg-info/PKG-INFO\n'}
+[7.779972] (object_avoidance) StdoutLine: {'line': b'writing dependency_links to ../../build/object_avoidance/object_avoidance.egg-info/dependency_links.txt\n'}
+[7.782556] (object_avoidance) StdoutLine: {'line': b'writing entry points to ../../build/object_avoidance/object_avoidance.egg-info/entry_points.txt\n'}
+[7.786347] (object_avoidance) StdoutLine: {'line': b'writing requirements to ../../build/object_avoidance/object_avoidance.egg-info/requires.txt\n'}
+[7.789067] (object_avoidance) StdoutLine: {'line': b'writing top-level names to ../../build/object_avoidance/object_avoidance.egg-info/top_level.txt\n'}
+[7.802507] (object_avoidance) StdoutLine: {'line': b"reading manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[7.803098] (-) TimerEvent: {}
+[7.807062] (object_avoidance) StdoutLine: {'line': b"writing manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[7.808020] (object_avoidance) StdoutLine: {'line': b'running build\n'}
+[7.809212] (object_avoidance) StdoutLine: {'line': b'running build_py\n'}
+[7.809679] (object_avoidance) StdoutLine: {'line': b'copying object_avoidance/objective_avoidance_publisher.py -> /home/cewan/ws_lidar/build/object_avoidance/build/lib/object_avoidance\n'}
+[7.812705] (object_avoidance) StdoutLine: {'line': b'running install\n'}
+[7.814185] (object_avoidance) StdoutLine: {'line': b'running install_lib\n'}
+[7.818323] (object_avoidance) StdoutLine: {'line': b'copying /home/cewan/ws_lidar/build/object_avoidance/build/lib/object_avoidance/objective_avoidance_publisher.py -> /home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance\n'}
+[7.821836] (lidar) StdoutLine: {'line': b'Installing lidar_publisher script to /home/cewan/ws_lidar/install/lidar/lib/lidar\n'}
+[7.823097] (lidar) StdoutLine: {'line': b'Installing lidar_subscriber script to /home/cewan/ws_lidar/install/lidar/lib/lidar\n'}
+[7.824293] (object_avoidance) StdoutLine: {'line': b'byte-compiling /home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance/objective_avoidance_publisher.py to objective_avoidance_publisher.cpython-310.pyc\n'}
+[7.825493] (lidar) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/ws_lidar/build/lidar/install.log'\n"}
+[7.826432] (object_avoidance) StderrLine: {'line': b'Sorry: TabError: inconsistent use of tabs and spaces in indentation (objective_avoidance_publisher.py, line 65)\n'}
+[7.828639] (object_avoidance) StdoutLine: {'line': b'running install_data\n'}
+[7.830352] (object_avoidance) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.846634] (object_avoidance) StdoutLine: {'line': b"removing '/home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.856271] (object_avoidance) StdoutLine: {'line': b'Copying ../../build/object_avoidance/object_avoidance.egg-info to /home/cewan/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info\n'}
+[7.869555] (object_avoidance) StdoutLine: {'line': b'running install_scripts\n'}
+[7.904227] (-) TimerEvent: {}
+[8.008815] (-) TimerEvent: {}
+[8.033053] (lidar) CommandEnded: {'returncode': 0}
+[8.042971] (object_avoidance) StdoutLine: {'line': b'Installing object_avoidance_publisher script to /home/cewan/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[8.048422] (object_avoidance) StdoutLine: {'line': b'Installing object_avoidance_subscriber script to /home/cewan/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[8.054801] (object_avoidance) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/ws_lidar/build/object_avoidance/install.log'\n"}
+[8.110330] (-) TimerEvent: {}
+[8.122911] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[8.210635] (-) TimerEvent: {}
+[8.237924] (object_avoidance) CommandEnded: {'returncode': 0}
+[8.301330] (object_avoidance) JobEnded: {'identifier': 'object_avoidance', 'rc': 0}
+[8.304951] (-) EventReactorShutdown: {}
