@@ -22,15 +22,15 @@ Automated-Tour-Car/
 ### 1. `lidar`
 - Handles **LiDAR data processing**.
 - Publishes scan data to `/scan` for other nodes.
-- Uses **rqt, RViz** for visualization.
+- Uses **RViz** for visualization.
 
 ### 2. `object_avoidance`
 - Implements **obstacle detection & avoidance**.
 - Subscribes to `/scan` and processes **distance data**.
-- Publishes movement commands to a `/cmd_vel` topic.
+- Publishes movement commands directly to the motors.
 
 ### 3. `sllidar_ros2`
-- Provides **ROS 2 driver support** for the **WayPonDEV LD14P LiDAR**.
+- Provides **ROS 2 driver support**.
 - Reads LiDAR sensor data and publishes to `/scan`.
 
 ---
