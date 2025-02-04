@@ -18,6 +18,20 @@ print(f"✅ Loaded {len(classes)} class labels: {classes[:10]}...")  # Verify cl
 CONF_THRESHOLD = 0.5  # Confidence threshold
 NMS_THRESHOLD = 0.3   # Non-Maximum Suppression threshold
 
+def apply_edge_detection(frame):
+    """Applies Canny edge detection and thickens the edges."""
+    
+    # Convert to grayscale
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  
+    edges = cv2.Canny(gray, 50, 150)  # Apply Canny edge detection
+
+    # **Thicken the edges using morphological dilation**
+    kernel = np.ones((3, 3), np.uint8)  # Adjust kernel size for thicker edges
+    edges_thick = cv2.dilate(edges, kernel, iterations=2)  # Increase iterations for even thicker edges
+
+    return edges_thick
+
+
 def capture_image():
     """ Captures a single image from the camera and saves it. """
     
@@ -57,7 +71,7 @@ def capture_image():
     return image_path
 
 def detect_objects(image_path):
-    """ Loads an image, runs YOLOv4-Tiny object detection, and saves the annotated image. """
+    """ Loads an image, runs YOLOv4-Tiny object detection, applies edge detection, and saves the annotated image. """
 
     # Load the image
     frame = cv2.imread(image_path)
@@ -68,8 +82,16 @@ def detect_objects(image_path):
 
     print(f"✅ Image loaded: {image_path}, Shape: {frame.shape}")
 
-    # Convert the image to YOLO format (416x416)
-    frame = cv2.resize(frame, (416, 416))  # Resize to expected YOLO input size
+    # Resize the image to YOLO format (416x416)
+    frame = cv2.resize(frame, (416, 416))
+
+    # Apply Canny edge detection
+    edges = apply_edge_detection(frame)
+
+    # Convert edges to 3-channel format for overlay
+    edges_colored = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
+
+    # Preprocess the image for YOLO
     blob = cv2.dnn.blobFromImage(frame, 1/255.0, (416, 416), swapRB=True, crop=False)
     net.setInput(blob)
     output_layers = [net.getLayerNames()[i - 1] for i in net.getUnconnectedOutLayers()]
@@ -124,10 +146,13 @@ def detect_objects(image_path):
         cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
         cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
+    # **Overlay edge detection on the image**
+    frame_with_edges = cv2.addWeighted(frame, 0.8, edges_colored, 0.2, 0)
+
     # Save the annotated image
     annotated_image_path = os.path.join(os.getcwd(), "annotated_image.jpg")
-    cv2.imwrite(annotated_image_path, frame)
-    print(f"✅ Annotated image saved: {annotated_image_path}")
+    cv2.imwrite(annotated_image_path, frame_with_edges)
+    print(f"✅ Annotated image with edges saved: {annotated_image_path}")
 
 def main():
     """ Main function to execute the image capture and annotation process. """

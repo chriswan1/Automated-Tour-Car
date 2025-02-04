@@ -1,10 +1,10 @@
 CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o: \
- /home/cewan/ws_lidar/src/sllidar_ros2/sdk/src/sl_crc.cpp \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_crc.cpp \
  /usr/include/stdc-predef.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_crc.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_types.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_crc.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_types.h \
  /usr/include/c++/11/cstdint \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \

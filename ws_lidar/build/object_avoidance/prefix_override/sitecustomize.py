@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/cewan/ws_lidar/install/object_avoidance'
+    sys.prefix = sys.exec_prefix = '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance'

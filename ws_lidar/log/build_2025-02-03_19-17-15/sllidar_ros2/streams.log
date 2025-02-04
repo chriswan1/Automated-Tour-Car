@@ -1,0 +1,569 @@
+[3.054s] Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2
+[3.489s] -- The C compiler identification is GNU 11.4.0
+[4.027s] -- The CXX compiler identification is GNU 11.4.0
+[4.058s] -- Detecting C compiler ABI info
+[4.518s] -- Detecting C compiler ABI info - done
+[4.535s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.537s] -- Detecting C compile features
+[4.538s] -- Detecting C compile features - done
+[4.552s] -- Detecting CXX compiler ABI info
+[5.059s] -- Detecting CXX compiler ABI info - done
+[5.111s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.115s] -- Detecting CXX compile features
+[5.118s] -- Detecting CXX compile features - done
+[5.158s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.328s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.269s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[7.793s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.848s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.921s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.016s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.157s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.673s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.704s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.281s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.639s] -- Found FastRTPS: /opt/ros/humble/include  
+[10.221s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.318s] -- Looking for pthread.h
+[10.741s] -- Looking for pthread.h - found
+[10.743s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.068s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.072s] -- Found Threads: TRUE  
+[11.376s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[11.557s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[12.019s] -- Configuring done
+[12.111s] -- Generating done
+[12.139s] -- Build files have been written to: /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2
+[12.189s] Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2
+[12.202s] Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake --build /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2 -- -j4 -l4
+[12.429s] [ 10%] [32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o[0m
+[12.430s] [ 10%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o[0m
+[12.478s] [ 15%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[12.492s] [ 20%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[16.408s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[16.409s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[16.410s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[16.412s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[16.414s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[16.415s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[16.416s]       |                [01;35m[K^[m[K
+[16.420s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[16.421s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[16.422s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[16.424s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[16.427s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[16.439s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[16.440s]       |                    [01;35m[K^[m[K
+[16.983s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42[m[K,
+[16.985s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:41[m[K,
+[16.986s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[16.987s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress*, const void*, size_t)[m[K’:
+[16.989s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:733:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[16.990s]   733 |             assert([01;35m[Kans == len[m[K);
+[16.991s]       |                    [01;35m[K~~~~^~~~~~[m[K
+[17.012s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[17.012s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.013s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[17.014s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[17.015s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[17.016s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.017s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[17.017s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[17.029s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[17.031s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.032s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[17.033s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[17.035s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[17.037s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.049s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[17.050s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[17.062s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::cancelOperation()[m[K’:
+[17.064s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:427:5:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[17.065s]   427 |     [01;35m[K(int)::write(_selfpipe[1], "x", 1)[m[K;
+[17.067s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.026s] [ 25%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[18.483s] [ 30%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/dataunpacker.cpp.o[0m
+[22.804s] [ 35%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o[0m
+[22.893s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[22.894s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[22.895s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[22.897s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunnpacker_commondef.h:41[m[K,
+[22.898s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:39[m[K:
+[22.899s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.908s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[22.910s]       |                [01;35m[K^[m[K
+[22.910s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[22.911s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[22.911s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[22.912s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunnpacker_commondef.h:41[m[K,
+[22.913s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:39[m[K:
+[22.914s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.921s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[22.929s]       |                    [01;35m[K^[m[K
+[24.895s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:40[m[K:
+[24.896s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)[m[K’:
+[24.897s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.898s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[24.904s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[24.906s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.907s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[24.908s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[24.909s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.910s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[24.912s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[24.915s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.920s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[24.923s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[24.929s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)[m[K’:
+[24.930s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.930s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[24.931s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[24.932s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.932s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[24.933s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[24.934s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.934s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[24.935s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[24.935s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.944s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[24.947s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[27.226s] [ 40%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o[0m
+[27.489s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[27.490s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[27.491s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[27.492s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[27.493s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39[m[K:
+[27.494s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[27.495s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[27.496s]       |                [01;35m[K^[m[K
+[27.496s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[27.497s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[27.498s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[27.499s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[27.499s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39[m[K:
+[27.500s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[27.513s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[27.513s]       |                    [01;35m[K^[m[K
+[29.272s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40[m[K:
+[29.274s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)[m[K’:
+[29.275s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.278s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[29.279s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[29.280s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.281s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[29.282s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[29.286s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.289s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[29.291s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[29.293s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.296s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[29.300s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[29.304s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)[m[K’:
+[29.307s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.311s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[29.313s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[29.315s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.317s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[29.319s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[29.323s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.325s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[29.327s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[29.331s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[29.334s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[29.336s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[29.365s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:[m[K In member function ‘[01m[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::_onScanNodeDenseCapsuleData(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)[m[K’:
+[29.366s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[29.367s]   763 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[29.370s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[30.607s] [ 45%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o[0m
+[31.323s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[31.323s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[31.324s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[31.325s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[31.326s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39[m[K:
+[31.326s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[31.327s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[31.328s]       |                [01;35m[K^[m[K
+[31.329s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[31.329s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[31.330s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[31.331s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[31.331s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39[m[K:
+[31.332s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[31.332s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[31.333s]       |                    [01;35m[K^[m[K
+[32.949s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40[m[K:
+[32.953s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)[m[K’:
+[32.953s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.954s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[32.955s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[32.957s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.958s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[32.958s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[32.959s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.960s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[32.961s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[32.962s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.963s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[32.964s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[32.964s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)[m[K’:
+[32.965s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.966s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[32.967s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[32.967s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.978s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[32.981s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[32.983s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.985s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[32.987s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[32.989s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.993s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[32.995s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[34.058s] [ 50%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o[0m
+[34.853s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[34.854s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[34.855s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[34.855s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[34.856s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39[m[K:
+[34.861s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.861s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[34.862s]       |                [01;35m[K^[m[K
+[34.886s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[34.886s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[34.887s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[34.888s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[34.889s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39[m[K:
+[34.890s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.890s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[34.891s]       |                    [01;35m[K^[m[K
+[36.627s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40[m[K:
+[36.629s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)[m[K’:
+[36.630s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.631s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[36.632s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[36.633s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.634s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[36.635s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[36.636s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.637s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[36.639s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[36.641s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.644s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[36.646s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[36.648s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)[m[K’:
+[36.651s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.653s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[36.655s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[36.657s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.659s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[36.661s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[36.663s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.666s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[36.668s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[36.670s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.672s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[36.674s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[37.435s] [ 55%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[37.450s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[37.450s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[37.451s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[37.452s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[37.464s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[37.465s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[37.466s]       |                [01;35m[K^[m[K
+[37.466s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[37.467s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[37.467s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[37.479s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[37.480s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[37.482s]       |                    [01;35m[K^[m[K
+[38.369s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[38.377s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[38.378s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[38.379s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[38.381s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.383s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[38.387s]       |                [01;35m[K^[m[K
+[38.393s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[38.397s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[38.399s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[38.401s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[38.403s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.404s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[38.408s]       |                    [01;35m[K^[m[K
+[39.052s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:43[m[K:
+[39.053s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[39.053s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:52:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[39.054s]    52 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[39.054s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[39.059s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[39.060s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:176:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[39.060s]   176 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[39.061s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[39.685s] [ 60%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_async_transceiver.cpp.o[0m
+[41.849s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[41.850s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[41.851s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[41.851s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[41.852s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[41.853s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[41.854s]       |                [01;35m[K^[m[K
+[41.855s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[41.856s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[41.858s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[41.859s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[41.860s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[41.862s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[41.862s]       |                    [01;35m[K^[m[K
+[43.259s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)[m[K’:
+[43.260s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.261s]    67 |     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[43.262s]       |                                                                        [01;35m[K~~~~~^~~~[m[K
+[43.264s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)[m[K’:
+[43.265s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.265s]   101 |     u_result RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[43.266s]       |                                   [01;35m[K~~~~~^~~~~~~[m[K
+[43.286s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[43.288s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.288s]   180 |     u_result RPlidarDriver::getScanDataWithInterval([01;35m[Krplidar_response_measurement_node_t * nodebuffer[m[K, size_t & count)
+[43.289s]       |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[43.290s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.291s]   180 |     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[43.291s]       |                                                                                                       [01;35m[K~~~~~~~~~^~~~~[m[K
+[43.415s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[43.416s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[43.417s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[43.419s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:35[m[K:
+[43.420s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[43.421s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[43.422s]       |                [01;35m[K^[m[K
+[43.426s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[43.427s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[43.428s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[43.429s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:35[m[K:
+[43.430s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[43.431s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[43.433s]       |                    [01;35m[K^[m[K
+[44.249s] [ 65%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o[0m
+[44.405s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:44[m[K:
+[44.406s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)[m[K’:
+[44.407s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[44.409s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[44.410s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[44.490s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[44.491s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[44.492s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[44.493s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[44.495s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[44.496s]       |                [01;35m[K^[m[K
+[44.499s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[44.501s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[44.502s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[44.503s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[44.505s]       |                    [01;35m[K^[m[K
+[44.791s] [ 70%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[45.619s] [ 75%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidarprotocol_codec.cpp.o[0m
+[49.863s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[49.863s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[49.864s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[49.865s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[49.866s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.867s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[49.868s]       |                [01;35m[K^[m[K
+[49.874s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[49.875s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[49.876s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[49.877s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[49.878s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.880s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[49.882s]       |                    [01;35m[K^[m[K
+[49.908s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[49.909s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[49.910s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[49.911s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:35[m[K:
+[49.912s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.913s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[49.914s]       |                [01;35m[K^[m[K
+[49.915s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[49.916s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[49.917s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[49.919s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:35[m[K:
+[49.921s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[49.924s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[49.926s]       |                    [01;35m[K^[m[K
+[51.561s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:49[m[K:
+[51.562s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)[m[K’:
+[51.563s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[51.564s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[51.565s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[52.446s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:50[m[K:
+[52.447s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)[m[K’:
+[52.450s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.451s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[52.453s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[52.454s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.455s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[52.456s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[52.457s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.459s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[52.460s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[52.462s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.463s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[52.464s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[52.464s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)[m[K’:
+[52.481s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.481s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[52.482s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[52.483s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.483s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[52.484s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[52.485s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.485s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[52.486s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[52.487s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.487s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[52.488s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[52.522s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:51[m[K:
+[52.523s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)[m[K’:
+[52.524s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.525s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[52.526s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[52.557s] [ 80%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[52.696s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)[m[K’:
+[52.699s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:511:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.704s]   511 |         sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[52.707s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.716s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[52.721s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:586:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.721s]   586 |         sl_result startScan(bool force, bool useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[52.722s]       |                                                              [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[52.727s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)[m[K’:
+[52.729s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:763:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.730s]   763 |         sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[52.732s]       |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.738s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[52.739s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:880:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.739s]   880 |         sl_result getFrequency(const LidarScanMode& scanMode, [01;35m[Kconst sl_lidar_response_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[52.740s]       |                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[52.751s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[52.752s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1023:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.752s]  1023 |         sl_result getMotorInfo(LidarMotorInfo &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[52.753s]       |                                                           [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[52.758s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ku_result sl::SlamtecLidarDriver::getScanModeCount(sl_u16&, sl_u32)[m[K’:
+[52.759s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1199:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[52.760s]  1199 |         u_result getScanModeCount(sl_u16& modeCount, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[52.760s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[53.117s] /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp: In instantiation of ‘[01m[Kvoid sl::RawSampleNodeHolder<T>::pushNode(_u64, const T*) [with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int][m[K’:
+[53.118s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1648:42:[m[K   required from here
+[53.119s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:202:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimestamp_uS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[53.119s]   202 |         void pushNode([01;35m[K_u64 timestamp_uS[m[K, const T* node)
+[53.120s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[53.779s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[53.781s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:83:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[53.782s]    83 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[53.783s]       |                 [01;35m[K^~~~~~~[m[K
+[53.784s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:75:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::convert(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[53.785s]    75 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)
+[53.787s]       |                 [01;35m[K^~~~~~~[m[K
+[53.788s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:70:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::printDeprecationWarn(const char*, const char*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[53.789s]    70 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[53.791s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[55.637s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[55.645s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[55.649s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33[m[K:
+[55.649s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[55.657s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[55.658s]       |                [01;35m[K^[m[K
+[55.658s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[55.659s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33[m[K:
+[55.684s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[55.685s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[55.686s]       |                    [01;35m[K^[m[K
+[60.259s] [ 85%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[62.015s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[62.016s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[62.017s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33[m[K:
+[62.018s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[62.018s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[62.019s]       |                [01;35m[K^[m[K
+[62.020s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[62.030s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33[m[K:
+[62.032s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[62.033s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[62.039s]       |                    [01;35m[K^[m[K
+[62.045s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::setStatus(_u32)[m[K’:
+[62.046s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:112:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[62.046s]   112 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[62.047s]       |                        [01;35m[K~~~~~^~~~[m[K
+[62.342s] [ 90%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[64.025s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[64.026s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[64.027s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33[m[K:
+[64.028s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[64.029s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[64.029s]       |                [01;35m[K^[m[K
+[64.051s] In file included from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[64.058s]                  from [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33[m[K:
+[64.074s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[64.075s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[64.076s]       |                    [01;35m[K^[m[K
+[64.078s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::setStatus(_u32)[m[K’:
+[64.079s] [01m[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:109:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[64.079s]   109 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[64.080s]       |                        [01;35m[K~~~~~^~~~[m[K
+[64.474s] [ 95%] [32m[1mLinking CXX executable sllidar_node[0m
+[66.166s] [ 95%] Built target sllidar_node
+[74.868s] [100%] [32m[1mLinking CXX executable sllidar_client[0m
+[76.976s] [100%] Built target sllidar_client
+[77.016s] Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake --build /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2 -- -j4 -l4
+[77.056s] Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake --install /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2
+[77.084s] -- Install configuration: ""
+[77.085s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch
+[77.086s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py
+[77.087s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py
+[77.088s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py
+[77.089s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[77.090s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[77.091s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py
+[77.092s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[77.094s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[77.095s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py
+[77.096s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[77.100s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[77.100s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py
+[77.101s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[77.102s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[77.103s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py
+[77.104s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[77.106s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py
+[77.107s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[77.109s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py
+[77.110s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py
+[77.111s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[77.113s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[77.114s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[77.115s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
+[77.117s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/rviz
+[77.117s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[77.119s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[77.135s] -- Set runtime path of "/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node" to ""
+[77.135s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[77.165s] -- Set runtime path of "/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client" to ""
+[77.167s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[77.169s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[77.171s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[77.173s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[77.174s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[77.176s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[77.177s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[77.179s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[77.180s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[77.182s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[77.184s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[77.195s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[77.196s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[77.197s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[77.198s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[77.198s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[77.199s] -- Installing: /home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[77.209s] Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/cartographer_slam:/opt/ros/humble /usr/bin/cmake --install /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2

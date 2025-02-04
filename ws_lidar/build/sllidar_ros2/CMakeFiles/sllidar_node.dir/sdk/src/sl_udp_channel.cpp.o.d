@@ -1,7 +1,7 @@
 CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o: \
- /home/cewan/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp \
  /usr/include/stdc-predef.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
@@ -143,9 +143,9 @@ CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/include/sl_types.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/sdk/src/hal/abs_rxtx.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/./sdk/src/hal/types.h \
- /home/cewan/ws_lidar/src/sllidar_ros2/sdk/src/hal/socket.h
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_types.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/abs_rxtx.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/hal/types.h \
+ /home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/socket.h
