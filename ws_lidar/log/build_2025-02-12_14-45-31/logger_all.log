@@ -1,0 +1,242 @@
+[0.523s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.524s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb8f7f8b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb9169db0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb9169db0>>)
+[1.528s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.531s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.531s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cewan/Automated-Tour-Car/ws_lidar'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.681s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.685s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.685s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.685s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.686s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.686s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.686s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.686s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.686s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.687s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.688s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.688s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.688s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.688s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ignore', 'ignore_ament_install']
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore'
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ignore_ament_install'
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_pkg']
+[1.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_pkg'
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['colcon_meta']
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'colcon_meta'
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extensions ['ros']
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar) by extension 'ros'
+[1.699s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar' with type 'ros.ament_python' and name 'lidar'
+[1.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extensions ['ignore', 'ignore_ament_install']
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extension 'ignore'
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extension 'ignore_ament_install'
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extensions ['colcon_pkg']
+[1.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extension 'colcon_pkg'
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extensions ['colcon_meta']
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extension 'colcon_meta'
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extensions ['ros']
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_avoidance) by extension 'ros'
+[1.703s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_avoidance' with type 'ros.ament_python' and name 'object_avoidance'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[1.708s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[1.708s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.790s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/cewan/Automated-Tour-Car/ws_lidar/install
+[1.799s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/humble
+[1.810s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_args' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target' from command line to 'None'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.993s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_cache' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_clean_first' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'cmake_force_configure' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'ament_cmake_args' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_cmake_args' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'lidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.995s] DEBUG:colcon.colcon_core.verb:Building package 'lidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar', 'merge_install': False, 'path': '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar', 'symlink_install': False, 'test_result_base': None}
+[1.997s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_args' from command line to 'None'
+[1.997s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_target' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_clean_cache' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_clean_first' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'cmake_force_configure' from command line to 'False'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'ament_cmake_args' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'catkin_cmake_args' from command line to 'None'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'object_avoidance' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.999s] DEBUG:colcon.colcon_core.verb:Building package 'object_avoidance' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance', 'merge_install': False, 'path': '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance', 'symlink_install': False, 'test_result_base': None}
+[2.001s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[2.001s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.002s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.003s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2', 'merge_install': False, 'path': '/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[2.004s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.015s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar' with build type 'ament_python'
+[2.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar', 'ament_prefix_path')
+[2.036s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/ament_prefix_path.ps1'
+[2.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/ament_prefix_path.dsv'
+[2.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/ament_prefix_path.sh'
+[2.050s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.074s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance' with build type 'ament_python'
+[2.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_avoidance', 'ament_prefix_path')
+[2.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/ament_prefix_path.ps1'
+[2.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/ament_prefix_path.dsv'
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/ament_prefix_path.sh'
+[2.089s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.089s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.109s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2' with build type 'ament_cmake'
+[2.110s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2'
+[2.111s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.112s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.718s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar'
+[3.719s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.719s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.273s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance'
+[5.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2 -- -j4 -l4
+[6.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2 -- -j4 -l4
+[6.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2
+[6.358s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[6.371s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2' for CMake module files
+[6.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2
+[6.376s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2' for CMake config files
+[6.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[6.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[6.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[6.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[6.391s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib'
+[6.392s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/bin'
+[6.392s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[6.393s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/python3.10/site-packages'
+[6.394s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/bin'
+[6.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[6.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[6.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[6.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[6.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[6.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[6.418s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[6.419s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2' for CMake module files
+[6.422s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2' for CMake config files
+[6.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[6.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[6.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[6.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[6.436s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib'
+[6.436s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/bin'
+[6.437s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[6.439s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/lib/python3.10/site-packages'
+[6.440s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/bin'
+[6.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[6.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[6.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[6.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[6.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[6.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[7.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/install.log --single-version-externally-managed install_data
+[7.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/object_avoidance build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log --single-version-externally-managed install_data
+[9.972s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar' for CMake module files
+[9.975s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar' for CMake config files
+[9.982s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib'
+[9.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar' returned '0': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/install.log --single-version-externally-managed install_data
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/bin'
+[9.985s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/pkgconfig/lidar.pc'
+[9.986s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages'
+[9.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar', 'pythonpath')
+[9.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/pythonpath.ps1'
+[9.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/pythonpath.dsv'
+[9.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/hook/pythonpath.sh'
+[9.996s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/bin'
+[9.996s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar)
+[9.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/package.ps1'
+[10.002s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/package.dsv'
+[10.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/package.sh'
+[10.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/package.bash'
+[10.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/lidar/package.zsh'
+[10.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/share/colcon-core/packages/lidar)
+[10.022s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance' for CMake module files
+[10.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance' returned '0': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/object_avoidance build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log --single-version-externally-managed install_data
+[10.027s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance' for CMake config files
+[10.032s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib'
+[10.033s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/bin'
+[10.034s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/pkgconfig/object_avoidance.pc'
+[10.035s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages'
+[10.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_avoidance', 'pythonpath')
+[10.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/pythonpath.ps1'
+[10.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/pythonpath.dsv'
+[10.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/hook/pythonpath.sh'
+[10.047s] Level 1:colcon.colcon_core.environment:checking '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/bin'
+[10.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_avoidance)
+[10.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/package.ps1'
+[10.057s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/package.dsv'
+[10.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/package.sh'
+[10.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/package.bash'
+[10.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/object_avoidance/package.zsh'
+[10.077s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/share/colcon-core/packages/object_avoidance)
+[10.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.083s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.084s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.086s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.118s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.125s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[10.125s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cewan/Automated-Tour-Car/ws_lidar/install/local_setup.ps1'
+[10.132s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cewan/Automated-Tour-Car/ws_lidar/install/_local_setup_util_ps1.py'
+[10.141s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cewan/Automated-Tour-Car/ws_lidar/install/setup.ps1'
+[10.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cewan/Automated-Tour-Car/ws_lidar/install/local_setup.sh'
+[10.151s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cewan/Automated-Tour-Car/ws_lidar/install/_local_setup_util_sh.py'
+[10.154s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cewan/Automated-Tour-Car/ws_lidar/install/setup.sh'
+[10.161s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cewan/Automated-Tour-Car/ws_lidar/install/local_setup.bash'
+[10.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cewan/Automated-Tour-Car/ws_lidar/install/setup.bash'
+[10.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cewan/Automated-Tour-Car/ws_lidar/install/local_setup.zsh'
+[10.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cewan/Automated-Tour-Car/ws_lidar/install/setup.zsh'

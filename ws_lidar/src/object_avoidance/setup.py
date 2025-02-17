@@ -23,6 +23,7 @@ setup(
         	'publisher=object_avoidance.object_avoidance_publisher:main',
         	'subscriber=object_avoidance.object_avoidance_subscriber:main',
         	'test=object_avoidance.test:main',
+		'turntest=object_avoidance.turntest:main',
         ],
     },
 )

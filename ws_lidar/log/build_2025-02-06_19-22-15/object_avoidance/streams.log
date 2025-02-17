@@ -1,0 +1,24 @@
+[6.049s] Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/object_avoidance build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log --single-version-externally-managed install_data
+[7.382s] Traceback (most recent call last):
+[7.383s]   File "/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance/setup.py", line 1, in <module>
+[7.383s]     from setuptools import find_packages, setup
+[7.384s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[7.384s]     import setuptools.version
+[7.386s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[7.387s]     import pkg_resources
+[7.387s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[7.390s]     def _initialize_master_working_set():
+[7.391s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[7.393s]     f(*args, **kwargs)
+[7.394s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set
+[7.399s]     list(map(working_set.add_entry, sys.path))
+[7.399s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[7.400s]     for dist in find_distributions(entry, True):
+[7.400s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2073, in find_on_path
+[7.401s]     path_item_entries = _by_version_descending(filtered)
+[7.401s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2043, in _by_version_descending
+[7.404s]     return sorted(names, key=_by_version, reverse=True)
+[7.404s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 69, in __lt__
+[7.407s]     def __lt__(self, other: "_BaseVersion") -> bool:
+[7.408s] KeyboardInterrupt
+[7.620s] Invoked command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance' returned '-2': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/object_avoidance build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log --single-version-externally-managed install_data

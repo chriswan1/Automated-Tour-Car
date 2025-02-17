@@ -1,164 +1,110 @@
-import time
-import cv2
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int32MultiArray
-import numpy as np
+from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist
+from std_msgs.msg import Bool
+import time
 
-# Load YOLOv4-Tiny Model
-net = cv2.dnn.readNet("yolov4-tiny.weights", "yolov4-tiny.cfg")
-net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
-net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
-
-# Load class labels
-with open("coco.names", "r") as f:
-    classes = [line.strip() for line in f.readlines()]
-
-print(f"✅ Loaded {len(classes)} class labels: {classes[:10]}...")  # Verify class names
-
-class ObstacleAvoidanceNode(Node):
+class AutoDecisionNode(Node):
     def __init__(self):
         super().__init__('obstacle_avoidance')
-        self.publisher_ = self.create_publisher(Int32MultiArray, 'car_directions', 10)
+        self.get_logger().info("Obstacle Avoidance Node Started")
 
-    def publish_direction(self, pwm_values, duration):
-        msg = Int32MultiArray()
-        msg.data = pwm_values
-        self.publisher_.publish(msg)
-        self.get_logger().info(f'Published PWM values: {pwm_values} for {duration}s')
-        time.sleep(duration)
-        self.publisher_.publish(Int32MultiArray(data=[0, 0, 0, 0]))  # Stop motors
+        self.obstacle_pub = self.create_publisher(Bool, '/obstacle_mode', 10)
+        self.twist_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        
+        # Subscribe to the /scan topic
+        self.scan_sub = self.create_subscription(LaserScan, '/scan', self.lidar_callback, 10)
+        self.get_logger().info("Subscribed to /scan topic")
 
-def detect_objects_yolov4(frame):
-    """ Detects objects using YOLOv4-Tiny and applies NMS """
+        # **Thresholds**
+        self.distance_threshold = 0.8  # Start avoiding at 0.8m
+        self.emergency_threshold = 0.5  # Reverse if obstacle < 0.5m
+        self.reverse_time = 2.0  # Reverse for 1 second
+        self.reverse_speed = -0.5  # Reverse speed
+        self.max_speed = 1.0  # Max forward speed
 
-    if len(frame.shape) == 2 or frame.shape[0] == 1:
-        frame = frame.reshape((416, 416, 3))
+        self.get_logger().info(f"Thresholds set: distance={self.distance_threshold}, emergency={self.emergency_threshold}, max_speed={self.max_speed}")
 
-    if frame.shape[2] != 3:
-        print("⚠️ Frame missing color channels, converting to RGB...")
-        frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2RGB)
+    def lidar_callback(self, data):
+        self.get_logger().info("Received LiDAR scan data")
+        self.number_of_readings = len(data.ranges)
+        self.range_max = data.range_max
+        ranges = [r if r != float("inf") else self.range_max for r in data.ranges]
 
-    # Debugging: Print frame shape after conversion
-    print(f"✅ Debug: Frame shape AFTER processing: {frame.shape}")
+        # **Find the minimum distance in each front-facing zone**
+        min_left1 = min(ranges[self.number_of_readings*11//12:self.number_of_readings])  # 330°-360°
+        min_left2 = min(ranges[self.number_of_readings*5//6:self.number_of_readings*11//12])  # 300°-330°
+        min_left3 = min(ranges[self.number_of_readings*3//4:self.number_of_readings*5//6])  # 270°-300°
+        
+        min_right1 = min(ranges[0:self.number_of_readings//12])  # 0°-30°
+        min_right2 = min(ranges[self.number_of_readings//12:self.number_of_readings//6])  # 30°-60°
+        min_right3 = min(ranges[self.number_of_readings//6:self.number_of_readings//4])  # 60°-90°
 
-    # Preprocess the image for YOLO
-    blob = cv2.dnn.blobFromImage(frame, 1/255.0, (416, 416), swapRB=True, crop=False)
-    net.setInput(blob)
-    output_layers = [net.getLayerNames()[i - 1] for i in net.getUnconnectedOutLayers()]
-    detections = net.forward(output_layers)
+        cmd_vel = Twist()
 
-    boxes, confs, class_ids = [], [], []
-    for output in detections:
-        for detection in output:
-            scores = detection[5:]
-            class_id = np.argmax(scores)
-            confidence = scores[class_id]
-            if class_id == 0 and confidence > 0.3: # confidence threshold
-                center_x, center_y, width, height = (detection[0:4] * np.array(
-                    [frame.shape[1], frame.shape[0], frame.shape[1], frame.shape[0]])).astype("int")
-                x = int(center_x - width / 2)
-                y = int(center_y - height / 2)
+        # **Step 1: PRIORITY EMERGENCY REVERSING**
+        if (
+            min_left1 < self.emergency_threshold or
+            min_left2 < self.emergency_threshold or
+            min_left3 < self.emergency_threshold or
+            min_right1 < self.emergency_threshold or
+            min_right2 < self.emergency_threshold or
+            min_right3 < self.emergency_threshold
+        ):
+            self.get_logger().warn(f"🚨 Emergency Reverse! Obstacle detected at {round(min(min_left1, min_right1), 2)}m")
 
-                boxes.append([x, y, int(width), int(height)])
-                confs.append(float(confidence))
-                class_ids.append(class_id)
+            # **Move backward**
+            cmd_vel.linear.x = self.reverse_speed  # Reverse speed (-0.5)
+            cmd_vel.angular.z = 0.0  # No turning while reversing
+            self.twist_pub.publish(cmd_vel)
+            self.get_logger().info(f"Reversing for {self.reverse_time}s | Speed: {self.reverse_speed}")
 
-    # Apply Non-Maximum Suppression (NMS)
-    indices = cv2.dnn.NMSBoxes(boxes, confs, 0.3, 0.4)
-    if len(indices) == 0:
-        print("⚠️ No valid boxes after NMS.")
-        return [], [], []  # Return empty results
+            # **Wait while reversing**
+            time.sleep(self.reverse_time)
 
-    filtered_boxes, filtered_confs, filtered_class_ids = [], [], []
-    for i in indices.flatten():  # Safely handle the indices
-        filtered_boxes.append(boxes[i])
-        filtered_confs.append(confs[i])
-        filtered_class_ids.append(class_ids[i])
+            # **Continue normal avoidance after reversing**
+            self.get_logger().info("Finished reversing. Resuming obstacle avoidance.")
 
-    return filtered_boxes, filtered_confs, filtered_class_ids
-
-def avoid_obstacle(boxes, frame, frame_width, publisher):
-    """ Decides motor commands based on detected objects """
-    left, center, right = 0, 0, 0
-    for box in boxes:
-        x, _, w, _ = box
-        bbox_midpoint = x + w / 2
-        if bbox_midpoint < frame_width // 3:
-            left += 1
-        elif bbox_midpoint > 2 * (frame_width // 3):
-            right += 1
+        # **Step 2: NORMAL OBSTACLE AVOIDANCE (Turn if needed)**
+        if min_left1 < self.distance_threshold:  
+            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.angular.z = -self.max_speed * 1.0  # Adjusted for softer turns
+            self.get_logger().info(f"Turn left 1 - Obstacle at {round(min_left1, 2)}m")
+        elif min_left2 < self.distance_threshold:
+            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.angular.z = -self.max_speed * 1.0
+            self.get_logger().info(f"Turn left 2 - Obstacle at {round(min_left2, 2)}m")
+        elif min_left3 < self.distance_threshold:
+            cmd_vel.linear.x = self.max_speed
+            cmd_vel.angular.z = -self.max_speed * 1.0
+            self.get_logger().info(f"Turn left 3 - Obstacle at {round(min_left3, 2)}m")
+        elif min_right1 < self.distance_threshold:  
+            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.angular.z = self.max_speed * 1.0
+            self.get_logger().info(f"Turn right 1 - Obstacle at {round(min_right1, 2)}m")
+        elif min_right2 < self.distance_threshold:
+            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.angular.z = self.max_speed * 1.0
+            self.get_logger().info(f"Turn right 2 - Obstacle at {round(min_right2, 2)}m")
+        elif min_right3 < self.distance_threshold:
+            cmd_vel.linear.x = self.max_speed
+            cmd_vel.angular.z = self.max_speed * 1.0
+            self.get_logger().info(f"Turn right 3 - Obstacle at {round(min_right3, 2)}m")
         else:
-            center += 1
+            cmd_vel.linear.x = self.max_speed
+            cmd_vel.angular.z = 0.0
+            self.get_logger().info("Moving Forward")
 
-    pwm_values = [0, 0, 0, 0]  # Default stop state
-    duration = 0.5  # Duration to move
-    if center > 0:
-        if left <= right:
-            pwm_values = [-1500, -1500, 2000, 2000]  # Turn left
-            print("Turning Left")
-        else:
-            pwm_values = [2000, 2000, -1500, -1500]  # Turn right
-            print("Turning Right")
-    elif left > 0:
-        pwm_values = [2000, 2000, -1500, -1500]  # Turn right
-        print("Turning Right")
-    elif right > 0:
-        pwm_values = [-1500, -1500, 2000, 2000]  # Turn left
-        print("Turning Left")
-    else:
-        pwm_values = [1000, 1000, 1000, 1000]  # Move forward
-        print("Moving Forward")
-
-    publisher.publish_direction(pwm_values, duration)
+        self.twist_pub.publish(cmd_vel)
+        self.get_logger().info(f"Published /cmd_vel: linear.x={cmd_vel.linear.x}, angular.z={cmd_vel.angular.z}")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ObstacleAvoidanceNode()
-
-    cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 416)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 416)
-
-    if not cap.isOpened():
-        print("❌ Error: Could not open camera.")
-        exit()
-
-    frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    last_capture_time = time.time()
-    interval = 0.25  # Process every 0.5 seconds
-
-    try:
-        while rclpy.ok():
-            ret, frame = cap.read()
-            if not ret or frame is None:
-                print("❌ Error: Failed to grab frame.")
-                continue
-
-            if time.time() - last_capture_time < interval:
-                continue  # Skip processing if interval hasn't elapsed
-            last_capture_time = time.time()
-
-            print(f"Processing image at {time.strftime('%H:%M:%S')}")
-
-            boxes, confs, class_ids = detect_objects_yolov4(frame)
-
-            if boxes:
-                print("Detected Objects:")
-                for i in range(len(boxes)):
-                    x, y, w, h = boxes[i]
-                    label = f"{classes[class_ids[i]]} ({confs[i]*100:.2f}%)"
-                    print(f" - {label} at X:{x}, Y:{y}, W:{w}, H:{h}")
-                    cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                    cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-            else:
-                print("No objects detected.")
-
-            avoid_obstacle(boxes, frame, frame_width, node)
-
-    finally:
-        cap.release()
-        rclpy.shutdown()
+    node = AutoDecisionNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

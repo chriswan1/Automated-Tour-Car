@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int32MultiArray
+from geometry_msgs.msg import Twist
 import time
 import math
 import smbus
@@ -66,6 +66,7 @@ class PCA9685:
     "Sets the Servo Pulse,The PWM frequency must be 50HZ"
     pulse = pulse*4096/20000        #PWM frequency is 50HZ,the period is 20000us
     self.setPWM(channel, 0, int(pulse))
+
 
 class Adc:
     def __init__(self):
@@ -225,52 +226,74 @@ class Motor:
             angle -= 5
 
 
-class MotorSubscriber(Node):
+class CmdVelSubscriber(Node):
     def __init__(self):
-        super().__init__('motor_subscriber')
+        super().__init__('cmd_vel_subscriber')
         self.motor = Motor()
+
         self.subscription = self.create_subscription(
-            Int32MultiArray,
-            'car_directions',
+            Twist,
+            '/cmd_vel',
             self.listener_callback,
             10)
-        self.get_logger().info("Motor Subscriber Node Started. Listening for PWM values...")
+        self.get_logger().info("Listening for /cmd_vel messages...")
 
         self.last_received_time = time.time()
+
+        # ✅ Adjusted PWM Values for Controlled Motion
+        self.max_turn_pwm = 1800  # Lower than 2000 to prevent excessive turns
+        self.max_forward_pwm = 1000  # Smooth forward movement
+        self.min_pwm = 800  # Ensures motors always get enough power
+        self.base_turn_time = 0.5  # 🔹 Base time for small adjustments
+
+        self.wheel_base = 0.2  # Distance between left and right wheels (meters)
 
     def listener_callback(self, msg):
-        if len(msg.data) != 4:
-            self.get_logger().error("Invalid PWM data received.")
-            return
+        linear_x = msg.linear.x  # Forward/backward speed
+        angular_z = msg.angular.z  # Rotation speed
 
-        pwm1, pwm2, pwm3, pwm4 = msg.data
-        self.get_logger().info(f"Executing PWM values: {pwm1}, {pwm2}, {pwm3}, {pwm4}")
+        if abs(angular_z) > 0:  # ✅ **Turning Required**
+            turn_intensity = min(abs(angular_z), 1.0)  # 🔹 Normalize turn intensity (0-1)
+            turn_duration = self.base_turn_time #+ (turn_intensity * 0.7)  # 🔹 Adjust turn duration dynamically
 
-        self.motor.setMotorModel(pwm1, pwm2, pwm3, pwm4)
+            left_pwm = self.max_turn_pwm if angular_z > 0 else -self.max_turn_pwm
+            right_pwm = -self.max_turn_pwm if angular_z > 0 else self.max_turn_pwm
 
-        # Update last received time
+            self.get_logger().info(f"Turning (Z={angular_z}) for {turn_duration:.2f}s | PWM: Left={left_pwm}, Right={right_pwm}")
+
+            # Apply turn for calculated duration
+            self.motor.setMotorModel(left_pwm, left_pwm, right_pwm, right_pwm)
+            time.sleep(turn_duration)
+
+            # Stop movement after turn
+            self.motor.setMotorModel(0, 0, 0, 0)
+            self.get_logger().info("Turn complete, stopping motors.")
+
+        else:  # ✅ **Moving Forward**
+            left_speed = linear_x
+            right_speed = linear_x
+
+            left_pwm = int(left_speed * self.max_forward_pwm)
+            right_pwm = int(right_speed * self.max_forward_pwm)
+
+            # ✅ **Ensure Minimum PWM Threshold**
+            if left_pwm != 0:
+                left_pwm = max(self.min_pwm, abs(left_pwm)) * (1 if left_pwm > 0 else -1)
+            if right_pwm != 0:
+                right_pwm = max(self.min_pwm, abs(right_pwm)) * (1 if right_pwm > 0 else -1)
+
+            self.get_logger().info(f"Moving Forward | PWM: Left={left_pwm}, Right={right_pwm}")
+            self.motor.setMotorModel(left_pwm, left_pwm, right_pwm, right_pwm)
+
+        # ✅ **Update Last Received Time**
         self.last_received_time = time.time()
-
-    def stop_if_no_command(self):
-        while rclpy.ok():
-            current_time = time.time()
-            if current_time - self.last_received_time > 1.0:  # If no command received in 1 second
-                self.get_logger().info("No command received. Stopping motors.")
-                self.motor.setMotorModel(0, 0, 0, 0)
-            time.sleep(0.5)
 
 def main(args=None):
     rclpy.init(args=args)
-    motor_subscriber = MotorSubscriber()
-
-    try:
-        rclpy.spin(motor_subscriber)
-    except KeyboardInterrupt:
-        motor_subscriber.get_logger().info("Shutting down motor subscriber...")
-    finally:
-        motor_subscriber.destroy_node()
-        rclpy.shutdown()
+    node = CmdVelSubscriber()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

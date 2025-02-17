@@ -1,0 +1,31 @@
+[6.199s] Invoking command in '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar': PYTHONPATH=/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/build install --record /home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/install.log --single-version-externally-managed install_data
+[7.426s] Traceback (most recent call last):
+[7.427s]   File "/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar/setup.py", line 1, in <module>
+[7.428s]     from setuptools import find_packages, setup
+[7.429s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[7.432s]     import setuptools.version
+[7.433s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[7.433s]     import pkg_resources
+[7.433s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[7.435s]     def _initialize_master_working_set():
+[7.437s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[7.440s]     f(*args, **kwargs)
+[7.440s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set
+[7.444s]     list(map(working_set.add_entry, sys.path))
+[7.445s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[7.446s]     for dist in find_distributions(entry, True):
+[7.446s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path
+[7.448s]     for dist in factory(fullpath):
+[7.449s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2142, in distributions_from_metadata
+[7.450s]     yield Distribution.from_location(
+[7.451s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2603, in from_location
+[7.453s]     return cls(
+[7.453s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2584, in __init__
+[7.471s]     self._version = safe_version(version)
+[7.472s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1323, in safe_version
+[7.474s]     return str(packaging.version.Version(version))
+[7.476s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 281, in __init__
+[7.477s]     self._key = _cmpkey(
+[7.491s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 459, in _cmpkey
+[7.494s]     reversed(list(itertools.dropwhile(lambda x: x == 0, reversed(release))))
+[7.495s] KeyboardInterrupt
