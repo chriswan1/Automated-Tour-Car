@@ -121,6 +121,8 @@ def loop1_3():
 #    time.sleep(10)
 #    PWM.setMotorModel(-500,-500,2000,2000) #left
 #    time.sleep(1.25)
+#    PWM.setMotorModel(1000,1000,1000,1000)
+#    time.sleep(5)
     PWM.setMotorModel(0,0,0,0)    
 
 def destroy():

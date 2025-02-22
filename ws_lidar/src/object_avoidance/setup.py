@@ -10,6 +10,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # Install launch files
+        ('share/' + package_name + '/launch', ['launch/object_avoidance_launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,10 +22,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'publisher=object_avoidance.object_avoidance_publisher:main',
-        	'subscriber=object_avoidance.object_avoidance_subscriber:main',
-        	'test=object_avoidance.test:main',
-		'turntest=object_avoidance.turntest:main',
+            'publisher=object_avoidance.object_avoidance_publisher:main',
+            'subscriber=object_avoidance.object_avoidance_subscriber:main',
+            'test=object_avoidance.test:main',
+            'turntest=object_avoidance.turntest:main',
         ],
     },
 )
