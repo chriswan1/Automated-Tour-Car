@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001542] (-) JobUnselected: {'identifier': 'TurtleBot'}
+[0.002027] (-) JobUnselected: {'identifier': 'gpsPubSub'}
+[0.002205] (-) JobUnselected: {'identifier': 'lidar'}
+[0.002283] (-) JobUnselected: {'identifier': 'object_avoidance'}
+[0.002357] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002657] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.002816] (teleop_control) JobStarted: {'identifier': 'teleop_control'}
+[0.098666] (-) TimerEvent: {}
+[0.199249] (-) TimerEvent: {}
+[0.299878] (-) TimerEvent: {}
+[0.400516] (-) TimerEvent: {}
+[0.501105] (-) TimerEvent: {}
+[0.601702] (-) TimerEvent: {}
+[0.702461] (-) TimerEvent: {}
+[0.803256] (-) TimerEvent: {}
+[0.903983] (-) TimerEvent: {}
+[1.004676] (-) TimerEvent: {}
+[1.105432] (-) TimerEvent: {}
+[1.206134] (-) TimerEvent: {}
+[1.306877] (-) TimerEvent: {}
+[1.407563] (-) TimerEvent: {}
+[1.508301] (-) TimerEvent: {}
+[1.609273] (-) TimerEvent: {}
+[1.710172] (-) TimerEvent: {}
+[1.810942] (-) TimerEvent: {}
+[1.911598] (-) TimerEvent: {}
+[2.012285] (-) TimerEvent: {}
+[2.113329] (-) TimerEvent: {}
+[2.214391] (-) TimerEvent: {}
+[2.315396] (-) TimerEvent: {}
+[2.416244] (-) TimerEvent: {}
+[2.516895] (-) TimerEvent: {}
+[2.617591] (-) TimerEvent: {}
+[2.718346] (-) TimerEvent: {}
+[2.819003] (-) TimerEvent: {}
+[2.919655] (-) TimerEvent: {}
+[3.020321] (-) TimerEvent: {}
+[3.121984] (-) TimerEvent: {}
+[3.222850] (-) TimerEvent: {}
+[3.324616] (-) TimerEvent: {}
+[3.381459] (teleop_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_control', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/teleop_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '192.168.0.28 64381 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src/teleop_control', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '13', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control:/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control', 'SSH_CONNECTION': '192.168.0.28 64381 192.168.0.76 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[3.424722] (-) TimerEvent: {}
+[3.526130] (-) TimerEvent: {}
+[3.626949] (-) TimerEvent: {}
+[3.727667] (-) TimerEvent: {}
+[3.828327] (-) TimerEvent: {}
+[3.929106] (-) TimerEvent: {}
+[4.029815] (-) TimerEvent: {}
+[4.130629] (-) TimerEvent: {}
+[4.231255] (-) TimerEvent: {}
+[4.331947] (-) TimerEvent: {}
+[4.432614] (-) TimerEvent: {}
+[4.533243] (-) TimerEvent: {}
+[4.634012] (-) TimerEvent: {}
+[4.735018] (-) TimerEvent: {}
+[4.835721] (-) TimerEvent: {}
+[4.851902] (teleop_control) StdoutLine: {'line': b'running egg_info\n'}
+[4.855095] (teleop_control) StdoutLine: {'line': b'writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO\n'}
+[4.856127] (teleop_control) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt\n'}
+[4.857451] (teleop_control) StdoutLine: {'line': b'writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt\n'}
+[4.858216] (teleop_control) StdoutLine: {'line': b'writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt\n'}
+[4.859069] (teleop_control) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt\n'}
+[4.867653] (teleop_control) StdoutLine: {'line': b"reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[4.871568] (teleop_control) StdoutLine: {'line': b"writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[4.872417] (teleop_control) StdoutLine: {'line': b'running build\n'}
+[4.872902] (teleop_control) StdoutLine: {'line': b'running build_py\n'}
+[4.873470] (teleop_control) StdoutLine: {'line': b'copying teleop_control/motor_control.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build/lib/teleop_control\n'}
+[4.874702] (teleop_control) StdoutLine: {'line': b'copying teleop_control/teleop.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build/lib/teleop_control\n'}
+[4.876093] (teleop_control) StdoutLine: {'line': b'running install\n'}
+[4.877435] (teleop_control) StdoutLine: {'line': b'running install_lib\n'}
+[4.886173] (teleop_control) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build/lib/teleop_control/motor_control.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control\n'}
+[4.887480] (teleop_control) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build/lib/teleop_control/teleop.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control\n'}
+[4.890534] (teleop_control) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control/motor_control.py to motor_control.cpython-310.pyc\n'}
+[4.900923] (teleop_control) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control/teleop.py to teleop.cpython-310.pyc\n'}
+[4.904083] (teleop_control) StdoutLine: {'line': b'running install_data\n'}
+[4.904877] (teleop_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.912869] (teleop_control) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.914780] (teleop_control) StdoutLine: {'line': b'Copying ../../build/teleop_control/teleop_control.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info\n'}
+[4.921377] (teleop_control) StdoutLine: {'line': b'running install_scripts\n'}
+[4.935855] (-) TimerEvent: {}
+[5.009234] (teleop_control) StdoutLine: {'line': b'Installing motor_control script to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/teleop_control\n'}
+[5.010207] (teleop_control) StdoutLine: {'line': b'Installing teleop script to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/teleop_control\n'}
+[5.011998] (teleop_control) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/install.log'\n"}
+[5.036111] (-) TimerEvent: {}
+[5.138028] (-) TimerEvent: {}
+[5.151221] (teleop_control) CommandEnded: {'returncode': 0}
+[5.204312] (teleop_control) JobEnded: {'identifier': 'teleop_control', 'rc': 0}
+[5.208040] (-) EventReactorShutdown: {}

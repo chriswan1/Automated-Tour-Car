@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.000710] (-) JobUnselected: {'identifier': 'TurtleBot'}
+[0.001554] (-) JobUnselected: {'identifier': 'gpsPubSub'}
+[0.002602] (-) JobUnselected: {'identifier': 'lidar'}
+[0.003263] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.003390] (object_avoidance) JobQueued: {'identifier': 'object_avoidance', 'dependencies': OrderedDict()}
+[0.004140] (object_avoidance) JobStarted: {'identifier': 'object_avoidance'}
+[0.098958] (-) TimerEvent: {}
+[0.200034] (-) TimerEvent: {}
+[0.301090] (-) TimerEvent: {}
+[0.402216] (-) TimerEvent: {}
+[0.502941] (-) TimerEvent: {}
+[0.603705] (-) TimerEvent: {}
+[0.704394] (-) TimerEvent: {}
+[0.805040] (-) TimerEvent: {}
+[0.906123] (-) TimerEvent: {}
+[1.007203] (-) TimerEvent: {}
+[1.107805] (-) TimerEvent: {}
+[1.208513] (-) TimerEvent: {}
+[1.309320] (-) TimerEvent: {}
+[1.410250] (-) TimerEvent: {}
+[1.511103] (-) TimerEvent: {}
+[1.612303] (-) TimerEvent: {}
+[1.713269] (-) TimerEvent: {}
+[1.813989] (-) TimerEvent: {}
+[1.914762] (-) TimerEvent: {}
+[2.015396] (-) TimerEvent: {}
+[2.116064] (-) TimerEvent: {}
+[2.216708] (-) TimerEvent: {}
+[2.317420] (-) TimerEvent: {}
+[2.418191] (-) TimerEvent: {}
+[2.518861] (-) TimerEvent: {}
+[2.619573] (-) TimerEvent: {}
+[2.720314] (-) TimerEvent: {}
+[2.820986] (-) TimerEvent: {}
+[2.922251] (-) TimerEvent: {}
+[3.022867] (-) TimerEvent: {}
+[3.123467] (-) TimerEvent: {}
+[3.224378] (-) TimerEvent: {}
+[3.325248] (-) TimerEvent: {}
+[3.426078] (-) TimerEvent: {}
+[3.526883] (-) TimerEvent: {}
+[3.627975] (-) TimerEvent: {}
+[3.729725] (-) TimerEvent: {}
+[3.737807] (object_avoidance) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/object_avoidance', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '192.168.0.28 56572 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '198', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance', 'SSH_CONNECTION': '192.168.0.28 56572 192.168.0.76 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[3.829878] (-) TimerEvent: {}
+[3.930525] (-) TimerEvent: {}
+[4.031252] (-) TimerEvent: {}
+[4.132690] (-) TimerEvent: {}
+[4.234276] (-) TimerEvent: {}
+[4.334965] (-) TimerEvent: {}
+[4.435677] (-) TimerEvent: {}
+[4.536446] (-) TimerEvent: {}
+[4.637223] (-) TimerEvent: {}
+[4.737860] (-) TimerEvent: {}
+[4.838484] (-) TimerEvent: {}
+[4.939127] (-) TimerEvent: {}
+[5.039846] (-) TimerEvent: {}
+[5.140586] (-) TimerEvent: {}
+[5.199751] (object_avoidance) StdoutLine: {'line': b'running egg_info\n'}
+[5.203331] (object_avoidance) StdoutLine: {'line': b'writing ../../build/object_avoidance/object_avoidance.egg-info/PKG-INFO\n'}
+[5.205675] (object_avoidance) StdoutLine: {'line': b'writing dependency_links to ../../build/object_avoidance/object_avoidance.egg-info/dependency_links.txt\n'}
+[5.206988] (object_avoidance) StdoutLine: {'line': b'writing entry points to ../../build/object_avoidance/object_avoidance.egg-info/entry_points.txt\n'}
+[5.207840] (object_avoidance) StdoutLine: {'line': b'writing requirements to ../../build/object_avoidance/object_avoidance.egg-info/requires.txt\n'}
+[5.209849] (object_avoidance) StdoutLine: {'line': b'writing top-level names to ../../build/object_avoidance/object_avoidance.egg-info/top_level.txt\n'}
+[5.226594] (object_avoidance) StdoutLine: {'line': b"reading manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[5.233671] (object_avoidance) StdoutLine: {'line': b"writing manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[5.234775] (object_avoidance) StdoutLine: {'line': b'running build\n'}
+[5.235324] (object_avoidance) StdoutLine: {'line': b'running build_py\n'}
+[5.237702] (object_avoidance) StdoutLine: {'line': b'copying object_avoidance/led.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build/lib/object_avoidance\n'}
+[5.240702] (-) TimerEvent: {}
+[5.246077] (object_avoidance) StdoutLine: {'line': b'running install\n'}
+[5.247586] (object_avoidance) StdoutLine: {'line': b'running install_lib\n'}
+[5.260664] (object_avoidance) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build/lib/object_avoidance/led.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance\n'}
+[5.267311] (object_avoidance) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance/led.py to led.cpython-310.pyc\n'}
+[5.282129] (object_avoidance) StdoutLine: {'line': b'running install_data\n'}
+[5.283933] (object_avoidance) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.293743] (object_avoidance) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.295901] (object_avoidance) StdoutLine: {'line': b'Copying ../../build/object_avoidance/object_avoidance.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info\n'}
+[5.306150] (object_avoidance) StdoutLine: {'line': b'running install_scripts\n'}
+[5.340956] (-) TimerEvent: {}
+[5.405753] (object_avoidance) StdoutLine: {'line': b'Installing led script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.406827] (object_avoidance) StdoutLine: {'line': b'Installing publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.407876] (object_avoidance) StdoutLine: {'line': b'Installing subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.409316] (object_avoidance) StdoutLine: {'line': b'Installing test script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.410556] (object_avoidance) StdoutLine: {'line': b'Installing turntest script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.411532] (object_avoidance) StdoutLine: {'line': b'Installing wall script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[5.414494] (object_avoidance) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log'\n"}
+[5.441417] (-) TimerEvent: {}
+[5.542684] (-) TimerEvent: {}
+[5.564078] (object_avoidance) CommandEnded: {'returncode': 0}
+[5.637929] (object_avoidance) JobEnded: {'identifier': 'object_avoidance', 'rc': 0}
+[5.641077] (-) EventReactorShutdown: {}

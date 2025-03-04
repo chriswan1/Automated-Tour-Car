@@ -26,6 +26,8 @@ setup(
             'subscriber=object_avoidance.object_avoidance_subscriber:main',
             'test=object_avoidance.test:main',
             'turntest=object_avoidance.turntest:main',
+            'wall_follower=object_avoidance.wall_follower:main',
+            'servo_turn=object_avoidance.servo_turn:main',
         ],
     },
 )

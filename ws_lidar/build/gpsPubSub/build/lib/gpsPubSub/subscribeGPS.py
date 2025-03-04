@@ -27,13 +27,13 @@ class GPSSubscriber(Node):
         xy = coords.split(',')
         x = float(xy[0])
         y = float(xy[1])
-        #self.get_logger().info('I heard: "%f, %f"', x,y)
+        # self.get_logger().info('I heard: {x, y}')
         
         utmcoords = utm.from_latlon(x,y)
         x = float(utmcoords[0])-421997.0166
-        x = x * 14.69
+        x = x * 14.75
         y = float(utmcoords[1])-3723007.886
-        y = y * 14.711
+        y = y * 14.75
         print(x,y)
         arr = Float64MultiArray()
         arr.data=[x,y]

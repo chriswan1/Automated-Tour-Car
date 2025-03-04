@@ -69,7 +69,7 @@ class PIDController(Node):
 
         # Generate control signals
         move = Twist()
-        move.linear.x = min(self.Kp_linear * self.error_position, 0.3)
+        move.linear.x = min(self.Kp_linear * self.error_position, 1.0)
         move.angular.z = self.Kp_angular * self.error_angle
         self.vel_pub.publish(move)
 

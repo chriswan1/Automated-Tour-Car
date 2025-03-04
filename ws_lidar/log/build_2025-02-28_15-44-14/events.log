@@ -1,0 +1,1472 @@
+[0.000000] (-) TimerEvent: {}
+[0.002206] (TurtleBot) JobQueued: {'identifier': 'TurtleBot', 'dependencies': OrderedDict()}
+[0.002830] (gpsPubSub) JobQueued: {'identifier': 'gpsPubSub', 'dependencies': OrderedDict()}
+[0.003237] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.003410] (object_avoidance) JobQueued: {'identifier': 'object_avoidance', 'dependencies': OrderedDict()}
+[0.003678] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.003827] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.003918] (tour_mapping_and_localization) JobQueued: {'identifier': 'tour_mapping_and_localization', 'dependencies': OrderedDict()}
+[0.004007] (TurtleBot) JobStarted: {'identifier': 'TurtleBot'}
+[0.051599] (gpsPubSub) JobStarted: {'identifier': 'gpsPubSub'}
+[0.071446] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.090995] (object_avoidance) JobStarted: {'identifier': 'object_avoidance'}
+[0.099243] (-) TimerEvent: {}
+[0.200712] (-) TimerEvent: {}
+[0.301467] (-) TimerEvent: {}
+[0.402240] (-) TimerEvent: {}
+[0.503245] (-) TimerEvent: {}
+[0.604656] (-) TimerEvent: {}
+[0.705490] (-) TimerEvent: {}
+[0.810893] (-) TimerEvent: {}
+[0.911625] (-) TimerEvent: {}
+[1.012439] (-) TimerEvent: {}
+[1.113191] (-) TimerEvent: {}
+[1.213872] (-) TimerEvent: {}
+[1.314984] (-) TimerEvent: {}
+[1.416104] (-) TimerEvent: {}
+[1.517639] (-) TimerEvent: {}
+[1.619131] (-) TimerEvent: {}
+[1.720016] (-) TimerEvent: {}
+[1.820755] (-) TimerEvent: {}
+[1.921550] (-) TimerEvent: {}
+[2.022247] (-) TimerEvent: {}
+[2.122895] (-) TimerEvent: {}
+[2.224440] (-) TimerEvent: {}
+[2.325215] (-) TimerEvent: {}
+[2.426049] (-) TimerEvent: {}
+[2.527055] (-) TimerEvent: {}
+[2.627881] (-) TimerEvent: {}
+[2.728695] (-) TimerEvent: {}
+[2.829529] (-) TimerEvent: {}
+[2.930261] (-) TimerEvent: {}
+[3.031227] (-) TimerEvent: {}
+[3.131990] (-) TimerEvent: {}
+[3.232808] (-) TimerEvent: {}
+[3.333594] (-) TimerEvent: {}
+[3.436075] (-) TimerEvent: {}
+[3.538207] (-) TimerEvent: {}
+[3.639294] (-) TimerEvent: {}
+[3.740663] (-) TimerEvent: {}
+[3.841452] (-) TimerEvent: {}
+[3.942188] (-) TimerEvent: {}
+[4.042938] (-) TimerEvent: {}
+[4.143794] (-) TimerEvent: {}
+[4.244619] (-) TimerEvent: {}
+[4.345624] (-) TimerEvent: {}
+[4.446609] (-) TimerEvent: {}
+[4.547314] (-) TimerEvent: {}
+[4.648153] (-) TimerEvent: {}
+[4.749155] (-) TimerEvent: {}
+[4.850109] (-) TimerEvent: {}
+[4.951116] (-) TimerEvent: {}
+[5.052240] (-) TimerEvent: {}
+[5.153500] (-) TimerEvent: {}
+[5.256030] (-) TimerEvent: {}
+[5.357107] (-) TimerEvent: {}
+[5.458047] (-) TimerEvent: {}
+[5.558929] (-) TimerEvent: {}
+[5.659808] (-) TimerEvent: {}
+[5.763012] (-) TimerEvent: {}
+[5.864693] (-) TimerEvent: {}
+[5.966556] (-) TimerEvent: {}
+[6.068454] (-) TimerEvent: {}
+[6.170530] (-) TimerEvent: {}
+[6.273363] (-) TimerEvent: {}
+[6.375366] (-) TimerEvent: {}
+[6.477129] (-) TimerEvent: {}
+[6.582173] (-) TimerEvent: {}
+[6.688246] (-) TimerEvent: {}
+[6.814340] (-) TimerEvent: {}
+[6.916098] (-) TimerEvent: {}
+[7.017863] (-) TimerEvent: {}
+[7.119916] (-) TimerEvent: {}
+[7.220728] (-) TimerEvent: {}
+[7.321770] (-) TimerEvent: {}
+[7.422754] (-) TimerEvent: {}
+[7.523676] (-) TimerEvent: {}
+[7.624496] (-) TimerEvent: {}
+[7.725458] (-) TimerEvent: {}
+[7.826887] (-) TimerEvent: {}
+[7.929050] (-) TimerEvent: {}
+[8.032986] (-) TimerEvent: {}
+[8.134650] (-) TimerEvent: {}
+[8.238177] (-) TimerEvent: {}
+[8.268555] (lidar) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/lidar', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 50465 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '93', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar', 'SSH_CONNECTION': '172.20.10.13 50465 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:'}, 'shell': False}
+[8.340136] (-) TimerEvent: {}
+[8.347049] (gpsPubSub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gpsPubSub', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/gpsPubSub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 50465 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '93', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub', 'SSH_CONNECTION': '172.20.10.13 50465 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:'}, 'shell': False}
+[8.440469] (-) TimerEvent: {}
+[8.471562] (TurtleBot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/TurtleBot', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/TurtleBot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 50465 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '93', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot', 'SSH_CONNECTION': '172.20.10.13 50465 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:'}, 'shell': False}
+[8.540722] (-) TimerEvent: {}
+[8.642043] (-) TimerEvent: {}
+[8.668584] (object_avoidance) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/object_avoidance', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/object_avoidance', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 50465 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '93', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance', 'SSH_CONNECTION': '172.20.10.13 50465 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:'}, 'shell': False}
+[8.742237] (-) TimerEvent: {}
+[8.843901] (-) TimerEvent: {}
+[8.946555] (-) TimerEvent: {}
+[9.048604] (-) TimerEvent: {}
+[9.149549] (-) TimerEvent: {}
+[9.251179] (-) TimerEvent: {}
+[9.353139] (-) TimerEvent: {}
+[9.454818] (-) TimerEvent: {}
+[9.556181] (-) TimerEvent: {}
+[9.657877] (-) TimerEvent: {}
+[9.759331] (-) TimerEvent: {}
+[9.860187] (-) TimerEvent: {}
+[9.961784] (-) TimerEvent: {}
+[10.063561] (-) TimerEvent: {}
+[10.151560] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[10.174297] (lidar) StdoutLine: {'line': b'writing ../../build/lidar/lidar.egg-info/PKG-INFO\n'}
+[10.175042] (-) TimerEvent: {}
+[10.182889] (lidar) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt\n'}
+[10.186573] (lidar) StdoutLine: {'line': b'writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt\n'}
+[10.193495] (lidar) StdoutLine: {'line': b'writing requirements to ../../build/lidar/lidar.egg-info/requires.txt\n'}
+[10.199350] (lidar) StdoutLine: {'line': b'writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt\n'}
+[10.225473] (lidar) StdoutLine: {'line': b"reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[10.231518] (lidar) StdoutLine: {'line': b"writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[10.233201] (lidar) StdoutLine: {'line': b'running build\n'}
+[10.234250] (lidar) StdoutLine: {'line': b'running build_py\n'}
+[10.251936] (lidar) StdoutLine: {'line': b'running install\n'}
+[10.254745] (lidar) StdoutLine: {'line': b'running install_lib\n'}
+[10.275293] (-) TimerEvent: {}
+[10.277044] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[10.281726] (lidar) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.294672] (lidar) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.314845] (lidar) StdoutLine: {'line': b'Copying ../../build/lidar/lidar.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info\n'}
+[10.359971] (lidar) StdoutLine: {'line': b'running install_scripts\n'}
+[10.375483] (-) TimerEvent: {}
+[10.477115] (-) TimerEvent: {}
+[10.578946] (-) TimerEvent: {}
+[10.607729] (gpsPubSub) StdoutLine: {'line': b'running egg_info\n'}
+[10.611327] (gpsPubSub) StdoutLine: {'line': b'writing ../../build/gpsPubSub/gpsPubSub.egg-info/PKG-INFO\n'}
+[10.619387] (lidar) StdoutLine: {'line': b'Installing lidar_publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/lidar\n'}
+[10.620804] (gpsPubSub) StdoutLine: {'line': b'writing dependency_links to ../../build/gpsPubSub/gpsPubSub.egg-info/dependency_links.txt\n'}
+[10.626110] (gpsPubSub) StdoutLine: {'line': b'writing entry points to ../../build/gpsPubSub/gpsPubSub.egg-info/entry_points.txt\n'}
+[10.628256] (gpsPubSub) StdoutLine: {'line': b'writing requirements to ../../build/gpsPubSub/gpsPubSub.egg-info/requires.txt\n'}
+[10.632014] (gpsPubSub) StdoutLine: {'line': b'writing top-level names to ../../build/gpsPubSub/gpsPubSub.egg-info/top_level.txt\n'}
+[10.638255] (lidar) StdoutLine: {'line': b'Installing lidar_subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/lidar\n'}
+[10.641672] (TurtleBot) StdoutLine: {'line': b'running egg_info\n'}
+[10.647875] (lidar) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/lidar/install.log'\n"}
+[10.653302] (TurtleBot) StdoutLine: {'line': b'writing ../../build/TurtleBot/TurtleBot.egg-info/PKG-INFO\n'}
+[10.654882] (TurtleBot) StdoutLine: {'line': b'writing dependency_links to ../../build/TurtleBot/TurtleBot.egg-info/dependency_links.txt\n'}
+[10.657422] (gpsPubSub) StdoutLine: {'line': b"reading manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[10.659185] (TurtleBot) StdoutLine: {'line': b'writing entry points to ../../build/TurtleBot/TurtleBot.egg-info/entry_points.txt\n'}
+[10.659922] (TurtleBot) StdoutLine: {'line': b'writing requirements to ../../build/TurtleBot/TurtleBot.egg-info/requires.txt\n'}
+[10.660794] (TurtleBot) StdoutLine: {'line': b'writing top-level names to ../../build/TurtleBot/TurtleBot.egg-info/top_level.txt\n'}
+[10.661559] (gpsPubSub) StdoutLine: {'line': b"writing manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[10.672348] (gpsPubSub) StdoutLine: {'line': b'running build\n'}
+[10.673166] (gpsPubSub) StdoutLine: {'line': b'running build_py\n'}
+[10.676984] (TurtleBot) StdoutLine: {'line': b"reading manifest file '../../build/TurtleBot/TurtleBot.egg-info/SOURCES.txt'\n"}
+[10.683228] (TurtleBot) StdoutLine: {'line': b"writing manifest file '../../build/TurtleBot/TurtleBot.egg-info/SOURCES.txt'\n"}
+[10.684459] (-) TimerEvent: {}
+[10.688230] (TurtleBot) StdoutLine: {'line': b'running build\n'}
+[10.691326] (TurtleBot) StdoutLine: {'line': b'running build_py\n'}
+[10.731951] (TurtleBot) StdoutLine: {'line': b'running install\n'}
+[10.733137] (TurtleBot) StdoutLine: {'line': b'running install_lib\n'}
+[10.734446] (gpsPubSub) StdoutLine: {'line': b'running install\n'}
+[10.735557] (gpsPubSub) StdoutLine: {'line': b'running install_lib\n'}
+[10.745072] (gpsPubSub) StdoutLine: {'line': b'running install_data\n'}
+[10.754911] (gpsPubSub) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.765447] (TurtleBot) StdoutLine: {'line': b'running install_data\n'}
+[10.785255] (-) TimerEvent: {}
+[10.789172] (TurtleBot) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.807682] (gpsPubSub) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.823757] (TurtleBot) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages/TurtleBot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.824428] (gpsPubSub) StdoutLine: {'line': b'Copying ../../build/gpsPubSub/gpsPubSub.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info\n'}
+[10.827032] (TurtleBot) StdoutLine: {'line': b'Copying ../../build/TurtleBot/TurtleBot.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages/TurtleBot-0.0.0-py3.10.egg-info\n'}
+[10.857442] (gpsPubSub) StdoutLine: {'line': b'running install_scripts\n'}
+[10.862796] (TurtleBot) StdoutLine: {'line': b'running install_scripts\n'}
+[10.865595] (lidar) CommandEnded: {'returncode': 0}
+[10.885465] (-) TimerEvent: {}
+[10.986516] (-) TimerEvent: {}
+[10.997656] (TurtleBot) StdoutLine: {'line': b'Installing Motion_Planner script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[11.013079] (TurtleBot) StdoutLine: {'line': b'Installing PID_Controller script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[11.015810] (TurtleBot) StdoutLine: {'line': b'Installing map_subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[11.021188] (TurtleBot) StdoutLine: {'line': b'Installing rrt_node script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[11.024475] (TurtleBot) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/install.log'\n"}
+[11.026440] (gpsPubSub) StdoutLine: {'line': b'Installing publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[11.032292] (gpsPubSub) StdoutLine: {'line': b'Installing subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[11.033151] (gpsPubSub) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log'\n"}
+[11.052670] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[11.060806] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[11.086838] (-) TimerEvent: {}
+[11.109778] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[11.120748] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[11.127319] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cewan'), ('SSH_CLIENT', '172.20.10.13 50465 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cewan'), ('OLDPWD', '/home/cewan/Automated-Tour-Car/ws_lidar/src'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'cewan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '93'), ('PATH', '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cewan/Automated-Tour-Car/ws_lidar/build/sllidar_ros2'), ('SSH_CONNECTION', '172.20.10.13 50465 172.20.10.2 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[11.176753] (object_avoidance) StdoutLine: {'line': b'running egg_info\n'}
+[11.184686] (object_avoidance) StdoutLine: {'line': b'writing ../../build/object_avoidance/object_avoidance.egg-info/PKG-INFO\n'}
+[11.190765] (-) TimerEvent: {}
+[11.202585] (object_avoidance) StdoutLine: {'line': b'writing dependency_links to ../../build/object_avoidance/object_avoidance.egg-info/dependency_links.txt\n'}
+[11.214044] (object_avoidance) StdoutLine: {'line': b'writing entry points to ../../build/object_avoidance/object_avoidance.egg-info/entry_points.txt\n'}
+[11.220493] (object_avoidance) StdoutLine: {'line': b'writing requirements to ../../build/object_avoidance/object_avoidance.egg-info/requires.txt\n'}
+[11.226228] (object_avoidance) StdoutLine: {'line': b'writing top-level names to ../../build/object_avoidance/object_avoidance.egg-info/top_level.txt\n'}
+[11.228495] (object_avoidance) StdoutLine: {'line': b"reading manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[11.237117] (object_avoidance) StdoutLine: {'line': b"writing manifest file '../../build/object_avoidance/object_avoidance.egg-info/SOURCES.txt'\n"}
+[11.238961] (object_avoidance) StdoutLine: {'line': b'running build\n'}
+[11.244489] (object_avoidance) StdoutLine: {'line': b'running build_py\n'}
+[11.247143] (gpsPubSub) CommandEnded: {'returncode': 0}
+[11.259091] (object_avoidance) StdoutLine: {'line': b'copying object_avoidance/Motor.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build/lib/object_avoidance\n'}
+[11.267362] (object_avoidance) StdoutLine: {'line': b'running install\n'}
+[11.269760] (object_avoidance) StdoutLine: {'line': b'running install_lib\n'}
+[11.287788] (object_avoidance) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/build/lib/object_avoidance/Motor.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance\n'}
+[11.292838] (-) TimerEvent: {}
+[11.298193] (object_avoidance) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance/Motor.py to Motor.cpython-310.pyc\n'}
+[11.306584] (object_avoidance) StdoutLine: {'line': b'running install_data\n'}
+[11.333009] (object_avoidance) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.343266] (object_avoidance) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.344737] (object_avoidance) StdoutLine: {'line': b'Copying ../../build/object_avoidance/object_avoidance.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages/object_avoidance-0.0.0-py3.10.egg-info\n'}
+[11.352396] (gpsPubSub) JobEnded: {'identifier': 'gpsPubSub', 'rc': 0}
+[11.356004] (teleop_control) JobStarted: {'identifier': 'teleop_control'}
+[11.360601] (object_avoidance) StdoutLine: {'line': b'running install_scripts\n'}
+[11.402711] (-) TimerEvent: {}
+[11.433088] (TurtleBot) CommandEnded: {'returncode': 0}
+[11.467731] (object_avoidance) StdoutLine: {'line': b'Installing publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.470586] (object_avoidance) StdoutLine: {'line': b'Installing servo_turn script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.471542] (object_avoidance) StdoutLine: {'line': b'Installing subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.473300] (object_avoidance) StdoutLine: {'line': b'Installing test script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.474293] (object_avoidance) StdoutLine: {'line': b'Installing turntest script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.476687] (object_avoidance) StdoutLine: {'line': b'Installing wall_follower script to /home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/object_avoidance\n'}
+[11.479946] (object_avoidance) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/object_avoidance/install.log'\n"}
+[11.493346] (TurtleBot) JobEnded: {'identifier': 'TurtleBot', 'rc': 0}
+[11.506691] (-) TimerEvent: {}
+[11.508323] (tour_mapping_and_localization) JobStarted: {'identifier': 'tour_mapping_and_localization'}
+[11.610855] (-) TimerEvent: {}
+[11.712049] (-) TimerEvent: {}
+[11.813270] (-) TimerEvent: {}
+[11.914272] (-) TimerEvent: {}
+[12.015197] (-) TimerEvent: {}
+[12.116298] (-) TimerEvent: {}
+[12.122992] (sllidar_ros2) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o\x1b[0m\n'}
+[12.134074] (sllidar_ros2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o\x1b[0m\n'}
+[12.156967] (sllidar_ros2) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o\x1b[0m\n'}
+[12.216229] (-) TimerEvent: {}
+[12.218313] (sllidar_ros2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o\x1b[0m\n'}
+[12.316363] (-) TimerEvent: {}
+[12.430164] (-) TimerEvent: {}
+[12.531103] (-) TimerEvent: {}
+[12.631899] (-) TimerEvent: {}
+[12.732772] (-) TimerEvent: {}
+[12.835205] (-) TimerEvent: {}
+[12.937321] (-) TimerEvent: {}
+[13.041184] (-) TimerEvent: {}
+[13.143435] (-) TimerEvent: {}
+[13.244542] (-) TimerEvent: {}
+[13.344925] (object_avoidance) CommandEnded: {'returncode': 0}
+[13.347328] (-) TimerEvent: {}
+[13.450374] (-) TimerEvent: {}
+[13.495169] (object_avoidance) JobEnded: {'identifier': 'object_avoidance', 'rc': 0}
+[13.497265] (tour_mapping_and_localization) JobProgress: {'identifier': 'tour_mapping_and_localization', 'progress': 'cmake'}
+[13.497499] (tour_mapping_and_localization) Command: {'cmd': ['/usr/bin/cmake', '/home/cewan/Automated-Tour-Car/ws_lidar/src/tour_mapping_and_localization', '-DCMAKE_INSTALL_PREFIX=/home/cewan/Automated-Tour-Car/ws_lidar/install/tour_mapping_and_localization'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/build/tour_mapping_and_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cewan'), ('SSH_CLIENT', '172.20.10.13 50465 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cewan'), ('OLDPWD', '/home/cewan/Automated-Tour-Car/ws_lidar/src'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'cewan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '93'), ('PATH', '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cewan/Automated-Tour-Car/ws_lidar/build/tour_mapping_and_localization'), ('SSH_CONNECTION', '172.20.10.13 50465 172.20.10.2 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[13.550528] (-) TimerEvent: {}
+[13.657219] (-) TimerEvent: {}
+[13.758124] (-) TimerEvent: {}
+[13.859269] (-) TimerEvent: {}
+[13.960548] (-) TimerEvent: {}
+[14.062831] (-) TimerEvent: {}
+[14.163946] (-) TimerEvent: {}
+[14.264841] (-) TimerEvent: {}
+[14.365789] (-) TimerEvent: {}
+[14.466621] (-) TimerEvent: {}
+[14.567554] (-) TimerEvent: {}
+[14.668345] (-) TimerEvent: {}
+[14.769138] (-) TimerEvent: {}
+[14.793410] (tour_mapping_and_localization) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[14.869450] (-) TimerEvent: {}
+[14.977332] (-) TimerEvent: {}
+[15.079549] (-) TimerEvent: {}
+[15.181080] (-) TimerEvent: {}
+[15.283506] (-) TimerEvent: {}
+[15.385897] (-) TimerEvent: {}
+[15.488652] (-) TimerEvent: {}
+[15.528188] (tour_mapping_and_localization) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[15.588869] (-) TimerEvent: {}
+[15.622556] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.689067] (-) TimerEvent: {}
+[15.790170] (-) TimerEvent: {}
+[15.891187] (-) TimerEvent: {}
+[15.992289] (-) TimerEvent: {}
+[16.102444] (-) TimerEvent: {}
+[16.208036] (-) TimerEvent: {}
+[16.314432] (-) TimerEvent: {}
+[16.408318] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.414630] (-) TimerEvent: {}
+[16.480727] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[16.488745] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.492576] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.514815] (-) TimerEvent: {}
+[16.543117] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.615056] (-) TimerEvent: {}
+[16.715902] (-) TimerEvent: {}
+[16.822940] (-) TimerEvent: {}
+[16.926472] (-) TimerEvent: {}
+[17.029180] (-) TimerEvent: {}
+[17.130505] (-) TimerEvent: {}
+[17.232182] (-) TimerEvent: {}
+[17.334160] (-) TimerEvent: {}
+[17.436689] (-) TimerEvent: {}
+[17.444393] (teleop_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_control', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/teleop_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 50465 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '93', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control', 'SSH_CONNECTION': '172.20.10.13 50465 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages:'}, 'shell': False}
+[17.517152] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[17.536904] (-) TimerEvent: {}
+[17.582731] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[17.595650] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[17.600506] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[17.637116] (-) TimerEvent: {}
+[17.738811] (-) TimerEvent: {}
+[17.841273] (-) TimerEvent: {}
+[17.943209] (-) TimerEvent: {}
+[18.045037] (-) TimerEvent: {}
+[18.063604] (tour_mapping_and_localization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[18.064573] (tour_mapping_and_localization) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[18.065215] (tour_mapping_and_localization) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[18.065881] (tour_mapping_and_localization) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[18.086934] (tour_mapping_and_localization) StderrLine: {'line': b'\n'}
+[18.087849] (tour_mapping_and_localization) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[18.088598] (tour_mapping_and_localization) StderrLine: {'line': b'  any of the following names:\n'}
+[18.089274] (tour_mapping_and_localization) StderrLine: {'line': b'\n'}
+[18.106494] (tour_mapping_and_localization) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[18.131164] (tour_mapping_and_localization) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[18.131857] (tour_mapping_and_localization) StderrLine: {'line': b'\n'}
+[18.132632] (tour_mapping_and_localization) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[18.133285] (tour_mapping_and_localization) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[18.158179] (tour_mapping_and_localization) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[18.159895] (-) TimerEvent: {}
+[18.161089] (tour_mapping_and_localization) StderrLine: {'line': b'  has been installed.\n'}
+[18.187581] (tour_mapping_and_localization) StderrLine: {'line': b'\n'}
+[18.188405] (tour_mapping_and_localization) StderrLine: {'line': b'\x1b[0m\n'}
+[18.188881] (tour_mapping_and_localization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[18.189354] (tour_mapping_and_localization) StdoutLine: {'line': b'See also "/home/cewan/Automated-Tour-Car/ws_lidar/build/tour_mapping_and_localization/CMakeFiles/CMakeOutput.log".\n'}
+[18.189820] (tour_mapping_and_localization) CommandEnded: {'returncode': 1}
+[18.270410] (-) TimerEvent: {}
+[18.302463] (tour_mapping_and_localization) JobEnded: {'identifier': 'tour_mapping_and_localization', 'rc': 1}
+[18.370648] (-) TimerEvent: {}
+[18.473607] (-) TimerEvent: {}
+[18.578519] (-) TimerEvent: {}
+[18.611304] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[18.612378] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[18.613008] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[18.613582] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[18.614195] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[18.614882] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[18.615499] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[18.619135] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[18.619935] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[18.620475] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[18.621065] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[18.621824] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[18.622455] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[18.622998] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[18.693001] (-) TimerEvent: {}
+[18.794510] (-) TimerEvent: {}
+[18.895470] (-) TimerEvent: {}
+[18.997067] (-) TimerEvent: {}
+[19.099236] (-) TimerEvent: {}
+[19.201399] (-) TimerEvent: {}
+[19.303516] (-) TimerEvent: {}
+[19.405381] (-) TimerEvent: {}
+[19.489245] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.490978] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.491688] (sllidar_ros2) StderrLine: {'line': b'   97 | bool raw_serial::open(const char * portname, uint32_t baudrate, \x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K)\n'}
+[19.492316] (sllidar_ros2) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[19.497895] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::flush(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.498960] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.499839] (sllidar_ros2) StderrLine: {'line': b'  281 | void raw_serial::flush( \x1b[01;35m\x1b[K_u32 flags\x1b[m\x1b[K)\n'}
+[19.500659] (sllidar_ros2) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~^~~~~\x1b[m\x1b[K\n'}
+[19.501554] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.502229] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.502911] (sllidar_ros2) StderrLine: {'line': b'  286 | int raw_serial::waitforsent(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[19.503612] (sllidar_ros2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[19.504272] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.504926] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[19.505844] (-) TimerEvent: {}
+[19.515782] (sllidar_ros2) StderrLine: {'line': b'  292 | int raw_serial::waitforrecv(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K, size_t * returned_size)\n'}
+[19.516461] (sllidar_ros2) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[19.517047] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rp::arch::net::raw_serial::cancelOperation()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.517811] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:427:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvalue computed is not used [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[19.518501] (sllidar_ros2) StderrLine: {'line': b'  427 |     \x1b[01;35m\x1b[K(int)::write(_selfpipe[1], "x", 1)\x1b[m\x1b[K;\n'}
+[19.519056] (sllidar_ros2) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.606688] (-) TimerEvent: {}
+[19.709106] (-) TimerEvent: {}
+[19.782429] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42\x1b[m\x1b[K,\n'}
+[19.783542] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:41\x1b[m\x1b[K,\n'}
+[19.785051] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10\x1b[m\x1b[K:\n'}
+[19.789773] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.791276] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:733:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[19.792449] (sllidar_ros2) StderrLine: {'line': b'  733 |             assert(\x1b[01;35m\x1b[Kans == len\x1b[m\x1b[K);\n'}
+[19.793416] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[19.809404] (-) TimerEvent: {}
+[19.911397] (-) TimerEvent: {}
+[20.013318] (-) TimerEvent: {}
+[20.115357] (-) TimerEvent: {}
+[20.211843] (teleop_control) StdoutLine: {'line': b'running egg_info\n'}
+[20.215626] (-) TimerEvent: {}
+[20.218142] (teleop_control) StdoutLine: {'line': b'writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO\n'}
+[20.219442] (teleop_control) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt\n'}
+[20.220793] (teleop_control) StdoutLine: {'line': b'writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt\n'}
+[20.221996] (teleop_control) StdoutLine: {'line': b'writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt\n'}
+[20.223103] (teleop_control) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt\n'}
+[20.234521] (teleop_control) StdoutLine: {'line': b"reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[20.241016] (teleop_control) StdoutLine: {'line': b"writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[20.242361] (teleop_control) StdoutLine: {'line': b'running build\n'}
+[20.243384] (teleop_control) StdoutLine: {'line': b'running build_py\n'}
+[20.248714] (teleop_control) StdoutLine: {'line': b'running install\n'}
+[20.251568] (teleop_control) StdoutLine: {'line': b'running install_lib\n'}
+[20.269966] (teleop_control) StdoutLine: {'line': b'running install_data\n'}
+[20.275166] (teleop_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.285837] (teleop_control) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[20.288285] (teleop_control) StdoutLine: {'line': b'Copying ../../build/teleop_control/teleop_control.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info\n'}
+[20.312106] (teleop_control) StdoutLine: {'line': b'running install_scripts\n'}
+[20.315857] (-) TimerEvent: {}
+[20.418784] (-) TimerEvent: {}
+[20.446361] (teleop_control) StdoutLine: {'line': b'Installing motor_control script to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/teleop_control\n'}
+[20.448411] (teleop_control) StdoutLine: {'line': b'Installing teleop script to /home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/teleop_control\n'}
+[20.451242] (teleop_control) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/teleop_control/install.log'\n"}
+[20.519124] (-) TimerEvent: {}
+[20.622299] (-) TimerEvent: {}
+[20.657255] (teleop_control) JobEnded: {'identifier': 'teleop_control', 'rc': 'SIGINT'}
+[20.722552] (-) TimerEvent: {}
+[20.792664] (sllidar_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o\x1b[0m\n'}
+[20.822829] (-) TimerEvent: {}
+[20.927029] (-) TimerEvent: {}
+[21.032941] (-) TimerEvent: {}
+[21.135657] (-) TimerEvent: {}
+[21.237738] (-) TimerEvent: {}
+[21.273365] (sllidar_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/dataunpacker.cpp.o\x1b[0m\n'}
+[21.337983] (-) TimerEvent: {}
+[21.439607] (-) TimerEvent: {}
+[21.541382] (-) TimerEvent: {}
+[21.643339] (-) TimerEvent: {}
+[21.744907] (-) TimerEvent: {}
+[21.846503] (-) TimerEvent: {}
+[21.948109] (-) TimerEvent: {}
+[22.050183] (-) TimerEvent: {}
+[22.152971] (-) TimerEvent: {}
+[22.253879] (-) TimerEvent: {}
+[22.356147] (-) TimerEvent: {}
+[22.459679] (-) TimerEvent: {}
+[22.571991] (-) TimerEvent: {}
+[22.674304] (-) TimerEvent: {}
+[22.776201] (-) TimerEvent: {}
+[22.886185] (-) TimerEvent: {}
+[22.988235] (-) TimerEvent: {}
+[23.089843] (-) TimerEvent: {}
+[23.198189] (-) TimerEvent: {}
+[23.300205] (-) TimerEvent: {}
+[23.401168] (-) TimerEvent: {}
+[23.503105] (-) TimerEvent: {}
+[23.608282] (-) TimerEvent: {}
+[23.710586] (-) TimerEvent: {}
+[23.813140] (-) TimerEvent: {}
+[23.918016] (-) TimerEvent: {}
+[24.019347] (-) TimerEvent: {}
+[24.121671] (-) TimerEvent: {}
+[24.223563] (-) TimerEvent: {}
+[24.325291] (-) TimerEvent: {}
+[24.427055] (-) TimerEvent: {}
+[24.529198] (-) TimerEvent: {}
+[24.631243] (-) TimerEvent: {}
+[24.732781] (-) TimerEvent: {}
+[24.834272] (-) TimerEvent: {}
+[24.943503] (-) TimerEvent: {}
+[25.044658] (-) TimerEvent: {}
+[25.071582] (sllidar_ros2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o\x1b[0m\n'}
+[25.148638] (-) TimerEvent: {}
+[25.249753] (-) TimerEvent: {}
+[25.352306] (-) TimerEvent: {}
+[25.453738] (-) TimerEvent: {}
+[25.555304] (-) TimerEvent: {}
+[25.657160] (-) TimerEvent: {}
+[25.763704] (-) TimerEvent: {}
+[25.867500] (-) TimerEvent: {}
+[25.930785] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[25.931830] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[25.932868] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[25.933653] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[25.934197] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[25.934836] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[25.935309] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[25.936001] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[25.937865] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[25.938902] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[25.939874] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[25.940634] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[25.941680] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:39\x1b[m\x1b[K:\n'}
+[25.942564] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[25.944823] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[25.946925] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[25.967945] (-) TimerEvent: {}
+[26.071122] (-) TimerEvent: {}
+[26.173573] (-) TimerEvent: {}
+[26.275477] (-) TimerEvent: {}
+[26.377722] (-) TimerEvent: {}
+[26.483808] (-) TimerEvent: {}
+[26.586909] (-) TimerEvent: {}
+[26.690950] (-) TimerEvent: {}
+[26.793925] (-) TimerEvent: {}
+[26.896025] (-) TimerEvent: {}
+[26.997759] (-) TimerEvent: {}
+[27.099687] (-) TimerEvent: {}
+[27.204627] (-) TimerEvent: {}
+[27.306435] (-) TimerEvent: {}
+[27.410064] (-) TimerEvent: {}
+[27.511991] (-) TimerEvent: {}
+[27.614123] (-) TimerEvent: {}
+[27.715922] (-) TimerEvent: {}
+[27.819022] (-) TimerEvent: {}
+[27.925156] (-) TimerEvent: {}
+[27.967166] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:40\x1b[m\x1b[K:\n'}
+[27.971337] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.974946] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[27.978296] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[27.981927] (sllidar_ros2) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[27.994177] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.007516] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[28.019673] (sllidar_ros2) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.033591] (-) TimerEvent: {}
+[28.041654] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.055726] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[28.070857] (sllidar_ros2) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[28.083383] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.095921] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[28.105821] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                                \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[28.118711] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.131525] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.142472] (-) TimerEvent: {}
+[28.144852] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[28.148504] (sllidar_ros2) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[28.152095] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.156352] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[28.159996] (sllidar_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[28.163747] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.167463] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[28.171221] (sllidar_ros2) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[28.174684] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[28.191200] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[28.192229] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                    \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[28.242638] (-) TimerEvent: {}
+[28.345302] (-) TimerEvent: {}
+[28.447061] (-) TimerEvent: {}
+[28.550936] (-) TimerEvent: {}
+[28.585187] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[28.586489] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[28.587118] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.587703] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[28.588460] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[28.606955] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.607871] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[28.608868] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.609585] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[28.615439] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[28.624596] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[28.653053] (-) TimerEvent: {}
+[28.653961] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[28.655145] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39\x1b[m\x1b[K:\n'}
+[28.656020] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[28.657002] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[28.658251] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[28.753300] (-) TimerEvent: {}
+[28.854390] (-) TimerEvent: {}
+[28.962158] (-) TimerEvent: {}
+[29.066210] (-) TimerEvent: {}
+[29.167519] (-) TimerEvent: {}
+[29.269483] (-) TimerEvent: {}
+[29.372816] (-) TimerEvent: {}
+[29.475604] (-) TimerEvent: {}
+[29.578868] (-) TimerEvent: {}
+[29.680656] (-) TimerEvent: {}
+[29.781715] (-) TimerEvent: {}
+[29.883304] (-) TimerEvent: {}
+[29.984348] (-) TimerEvent: {}
+[30.094163] (-) TimerEvent: {}
+[30.198175] (-) TimerEvent: {}
+[30.299689] (-) TimerEvent: {}
+[30.406525] (-) TimerEvent: {}
+[30.509239] (-) TimerEvent: {}
+[30.533202] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40\x1b[m\x1b[K:\n'}
+[30.534200] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.535381] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.536161] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[30.537015] (sllidar_ros2) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.537745] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.538527] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[30.539241] (sllidar_ros2) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.539937] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.540693] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[30.541780] (sllidar_ros2) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.549095] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.550085] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[30.550834] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                                \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.551595] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.552335] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.553246] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[30.554037] (sllidar_ros2) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[30.554787] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.555466] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[30.556265] (sllidar_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.557002] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.557755] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[30.570670] (sllidar_ros2) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.571477] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[30.572185] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[30.572868] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                    \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[30.590835] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::_onScanNodeDenseCapsuleData(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.591690] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on cast result type [\x1b[01;35m\x1b[K-Wignored-qualifiers\x1b[m\x1b[K]\n'}
+[30.592334] (sllidar_ros2) StderrLine: {'line': b'  763 |             const int dist = \x1b[01;35m\x1b[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)\x1b[m\x1b[K;\n'}
+[30.592936] (sllidar_ros2) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.609518] (-) TimerEvent: {}
+[30.711922] (-) TimerEvent: {}
+[30.814124] (-) TimerEvent: {}
+[30.916312] (-) TimerEvent: {}
+[31.018633] (-) TimerEvent: {}
+[31.120532] (-) TimerEvent: {}
+[31.224894] (-) TimerEvent: {}
+[31.326902] (-) TimerEvent: {}
+[31.428850] (-) TimerEvent: {}
+[31.530701] (-) TimerEvent: {}
+[31.633055] (-) TimerEvent: {}
+[31.734000] (-) TimerEvent: {}
+[31.834903] (-) TimerEvent: {}
+[31.935917] (-) TimerEvent: {}
+[32.036800] (-) TimerEvent: {}
+[32.137682] (-) TimerEvent: {}
+[32.238635] (-) TimerEvent: {}
+[32.339527] (-) TimerEvent: {}
+[32.441479] (-) TimerEvent: {}
+[32.542507] (-) TimerEvent: {}
+[32.650155] (-) TimerEvent: {}
+[32.754259] (-) TimerEvent: {}
+[32.855259] (-) TimerEvent: {}
+[32.962125] (-) TimerEvent: {}
+[33.066186] (-) TimerEvent: {}
+[33.168447] (-) TimerEvent: {}
+[33.269847] (-) TimerEvent: {}
+[33.371819] (-) TimerEvent: {}
+[33.478871] (-) TimerEvent: {}
+[33.594140] (-) TimerEvent: {}
+[33.695050] (-) TimerEvent: {}
+[33.796947] (-) TimerEvent: {}
+[33.897907] (-) TimerEvent: {}
+[33.999757] (-) TimerEvent: {}
+[34.100669] (-) TimerEvent: {}
+[34.201651] (-) TimerEvent: {}
+[34.303838] (-) TimerEvent: {}
+[34.406567] (-) TimerEvent: {}
+[34.508920] (-) TimerEvent: {}
+[34.610671] (-) TimerEvent: {}
+[34.712663] (-) TimerEvent: {}
+[34.814340] (-) TimerEvent: {}
+[34.915963] (-) TimerEvent: {}
+[35.018276] (-) TimerEvent: {}
+[35.121375] (-) TimerEvent: {}
+[35.223139] (-) TimerEvent: {}
+[35.325253] (-) TimerEvent: {}
+[35.427326] (-) TimerEvent: {}
+[35.529164] (-) TimerEvent: {}
+[35.531483] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[35.532462] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[35.533521] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[35.534648] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/src/sllidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[35.536043] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[35.536981] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[35.538056] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[35.539017] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[35.539970] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[35.540883] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/src/sllidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[35.541824] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[35.542841] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[35.544016] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[35.629526] (-) TimerEvent: {}
+[35.730329] (-) TimerEvent: {}
+[35.832396] (-) TimerEvent: {}
+[35.935420] (-) TimerEvent: {}
+[36.036291] (-) TimerEvent: {}
+[36.137222] (-) TimerEvent: {}
+[36.238237] (-) TimerEvent: {}
+[36.339178] (-) TimerEvent: {}
+[36.440043] (-) TimerEvent: {}
+[36.540913] (-) TimerEvent: {}
+[36.642307] (-) TimerEvent: {}
+[36.743198] (-) TimerEvent: {}
+[36.844070] (-) TimerEvent: {}
+[36.944975] (-) TimerEvent: {}
+[37.046955] (-) TimerEvent: {}
+[37.150478] (-) TimerEvent: {}
+[37.252589] (-) TimerEvent: {}
+[37.354516] (-) TimerEvent: {}
+[37.455341] (-) TimerEvent: {}
+[37.556204] (-) TimerEvent: {}
+[37.657181] (-) TimerEvent: {}
+[37.762346] (-) TimerEvent: {}
+[37.863247] (-) TimerEvent: {}
+[37.964194] (-) TimerEvent: {}
+[38.070138] (-) TimerEvent: {}
+[38.170995] (-) TimerEvent: {}
+[38.271971] (-) TimerEvent: {}
+[38.373789] (-) TimerEvent: {}
+[38.474737] (-) TimerEvent: {}
+[38.575527] (-) TimerEvent: {}
+[38.677119] (-) TimerEvent: {}
+[38.778181] (-) TimerEvent: {}
+[38.879212] (-) TimerEvent: {}
+[38.981963] (-) TimerEvent: {}
+[39.085711] (-) TimerEvent: {}
+[39.187513] (-) TimerEvent: {}
+[39.288653] (-) TimerEvent: {}
+[39.391242] (-) TimerEvent: {}
+[39.492882] (-) TimerEvent: {}
+[39.593677] (-) TimerEvent: {}
+[39.698183] (-) TimerEvent: {}
+[39.806121] (-) TimerEvent: {}
+[39.908920] (-) TimerEvent: {}
+[40.012030] (-) TimerEvent: {}
+[40.114220] (-) TimerEvent: {}
+[40.215298] (-) TimerEvent: {}
+[40.318152] (-) TimerEvent: {}
+[40.418969] (-) TimerEvent: {}
+[40.519750] (-) TimerEvent: {}
+[40.620587] (-) TimerEvent: {}
+[40.721416] (-) TimerEvent: {}
+[40.822678] (-) TimerEvent: {}
+[40.923538] (-) TimerEvent: {}
+[41.024463] (-) TimerEvent: {}
+[41.125572] (-) TimerEvent: {}
+[41.226994] (-) TimerEvent: {}
+[41.327939] (-) TimerEvent: {}
+[41.428841] (-) TimerEvent: {}
+[41.530764] (-) TimerEvent: {}
+[41.633378] (-) TimerEvent: {}
+[41.736390] (-) TimerEvent: {}
+[41.839226] (-) TimerEvent: {}
+[41.941270] (-) TimerEvent: {}
+[42.042693] (-) TimerEvent: {}
+[42.144409] (-) TimerEvent: {}
+[42.245342] (-) TimerEvent: {}
+[42.356287] (-) TimerEvent: {}
+[42.459689] (-) TimerEvent: {}
+[42.560690] (-) TimerEvent: {}
+[42.661676] (-) TimerEvent: {}
+[42.763595] (-) TimerEvent: {}
+[42.864679] (-) TimerEvent: {}
+[42.966082] (-) TimerEvent: {}
+[43.069514] (-) TimerEvent: {}
+[43.171054] (-) TimerEvent: {}
+[43.277400] (-) TimerEvent: {}
+[43.378292] (-) TimerEvent: {}
+[43.479240] (-) TimerEvent: {}
+[43.580219] (-) TimerEvent: {}
+[43.702183] (-) TimerEvent: {}
+[43.803108] (-) TimerEvent: {}
+[43.904941] (-) TimerEvent: {}
+[44.006396] (-) TimerEvent: {}
+[44.107509] (-) TimerEvent: {}
+[44.210835] (-) TimerEvent: {}
+[44.311798] (-) TimerEvent: {}
+[44.414211] (-) TimerEvent: {}
+[44.515202] (-) TimerEvent: {}
+[44.616623] (-) TimerEvent: {}
+[44.718633] (-) TimerEvent: {}
+[44.820544] (-) TimerEvent: {}
+[44.922549] (-) TimerEvent: {}
+[45.023790] (-) TimerEvent: {}
+[45.124720] (-) TimerEvent: {}
+[45.227643] (-) TimerEvent: {}
+[45.328559] (-) TimerEvent: {}
+[45.429696] (-) TimerEvent: {}
+[45.531188] (-) TimerEvent: {}
+[45.632946] (-) TimerEvent: {}
+[45.734197] (-) TimerEvent: {}
+[45.836428] (-) TimerEvent: {}
+[45.937332] (-) TimerEvent: {}
+[46.038355] (-) TimerEvent: {}
+[46.139555] (-) TimerEvent: {}
+[46.249612] (-) TimerEvent: {}
+[46.365871] (-) TimerEvent: {}
+[46.466807] (-) TimerEvent: {}
+[46.568106] (-) TimerEvent: {}
+[46.669012] (-) TimerEvent: {}
+[46.770669] (-) TimerEvent: {}
+[46.872710] (-) TimerEvent: {}
+[46.974779] (-) TimerEvent: {}
+[47.076597] (-) TimerEvent: {}
+[47.178503] (-) TimerEvent: {}
+[47.280845] (-) TimerEvent: {}
+[47.382240] (-) TimerEvent: {}
+[47.483107] (-) TimerEvent: {}
+[47.584722] (-) TimerEvent: {}
+[47.686785] (-) TimerEvent: {}
+[47.788746] (-) TimerEvent: {}
+[47.890971] (-) TimerEvent: {}
+[47.992208] (-) TimerEvent: {}
+[48.094166] (-) TimerEvent: {}
+[48.196140] (-) TimerEvent: {}
+[48.297804] (-) TimerEvent: {}
+[48.402144] (-) TimerEvent: {}
+[48.503327] (-) TimerEvent: {}
+[48.604177] (-) TimerEvent: {}
+[48.707991] (-) TimerEvent: {}
+[48.814183] (-) TimerEvent: {}
+[48.915109] (-) TimerEvent: {}
+[49.015955] (-) TimerEvent: {}
+[49.117536] (-) TimerEvent: {}
+[49.223488] (-) TimerEvent: {}
+[49.324310] (-) TimerEvent: {}
+[49.426190] (-) TimerEvent: {}
+[49.529732] (-) TimerEvent: {}
+[49.633065] (-) TimerEvent: {}
+[49.734938] (-) TimerEvent: {}
+[49.837494] (-) TimerEvent: {}
+[49.941716] (-) TimerEvent: {}
+[50.042677] (-) TimerEvent: {}
+[50.143504] (-) TimerEvent: {}
+[50.244337] (-) TimerEvent: {}
+[50.345293] (-) TimerEvent: {}
+[50.452005] (-) TimerEvent: {}
+[50.553195] (-) TimerEvent: {}
+[50.656566] (-) TimerEvent: {}
+[50.759387] (-) TimerEvent: {}
+[50.861782] (-) TimerEvent: {}
+[50.964459] (-) TimerEvent: {}
+[51.066272] (-) TimerEvent: {}
+[51.170432] (-) TimerEvent: {}
+[51.177489] (sllidar_ros2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o\x1b[0m\n'}
+[51.270617] (-) TimerEvent: {}
+[51.371914] (-) TimerEvent: {}
+[51.473794] (-) TimerEvent: {}
+[51.578169] (-) TimerEvent: {}
+[51.679214] (-) TimerEvent: {}
+[51.780688] (-) TimerEvent: {}
+[51.881861] (-) TimerEvent: {}
+[51.985062] (-) TimerEvent: {}
+[52.087852] (-) TimerEvent: {}
+[52.189817] (-) TimerEvent: {}
+[52.291476] (-) TimerEvent: {}
+[52.393027] (-) TimerEvent: {}
+[52.494481] (-) TimerEvent: {}
+[52.597623] (-) TimerEvent: {}
+[52.698781] (-) TimerEvent: {}
+[52.801685] (-) TimerEvent: {}
+[52.904002] (-) TimerEvent: {}
+[53.008737] (-) TimerEvent: {}
+[53.112079] (-) TimerEvent: {}
+[53.213029] (-) TimerEvent: {}
+[53.313857] (-) TimerEvent: {}
+[53.414868] (-) TimerEvent: {}
+[53.515758] (-) TimerEvent: {}
+[53.616712] (-) TimerEvent: {}
+[53.719504] (-) TimerEvent: {}
+[53.821462] (-) TimerEvent: {}
+[53.887035] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[53.887654] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[53.888177] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[53.888818] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[53.889527] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39\x1b[m\x1b[K:\n'}
+[53.890268] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[53.891051] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[53.891799] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[53.893133] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[53.893897] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[53.895481] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[53.896294] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[53.897036] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39\x1b[m\x1b[K:\n'}
+[53.897703] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[53.899435] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[53.900692] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[53.921818] (-) TimerEvent: {}
+[54.029196] (-) TimerEvent: {}
+[54.130365] (-) TimerEvent: {}
+[54.231434] (-) TimerEvent: {}
+[54.332280] (-) TimerEvent: {}
+[54.433078] (-) TimerEvent: {}
+[54.536122] (-) TimerEvent: {}
+[54.638423] (-) TimerEvent: {}
+[54.739299] (-) TimerEvent: {}
+[54.840159] (-) TimerEvent: {}
+[54.920768] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40\x1b[m\x1b[K:\n'}
+[54.921546] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[54.922387] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.923122] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[54.923764] (sllidar_ros2) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[54.924990] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.925692] (sllidar_ros2) StderrLine: {'line': b'   54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[54.926585] (sllidar_ros2) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[54.927450] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[54.931059] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.931844] (sllidar_ros2) StderrLine: {'line': b'   54 | SampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[54.932446] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[54.933117] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[54.933621] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.934208] (sllidar_ros2) StderrLine: {'line': b'   54 | Decoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[54.935067] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[54.935667] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[54.936265] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[54.936932] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.937463] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[54.946294] (-) TimerEvent: {}
+[54.947175] (sllidar_ros2) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[54.948047] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.948822] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[54.949526] (sllidar_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[54.950476] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.951161] (sllidar_ros2) StderrLine: {'line': b'   56 | l void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[54.951829] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[54.952522] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[54.953236] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[54.954081] (sllidar_ros2) StderrLine: {'line': b'   56 | dingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[54.954885] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[54.955486] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[55.047117] (-) TimerEvent: {}
+[55.148066] (-) TimerEvent: {}
+[55.249274] (-) TimerEvent: {}
+[55.279137] (sllidar_ros2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o\x1b[0m\n'}
+[55.349877] (-) TimerEvent: {}
+[55.453745] (-) TimerEvent: {}
+[55.555832] (-) TimerEvent: {}
+[55.656714] (-) TimerEvent: {}
+[55.685473] (sllidar_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o\x1b[0m\n'}
+[55.758201] (-) TimerEvent: {}
+[55.859336] (-) TimerEvent: {}
+[55.961597] (-) TimerEvent: {}
+[56.064299] (-) TimerEvent: {}
+[56.165134] (-) TimerEvent: {}
+[56.267182] (-) TimerEvent: {}
+[56.370273] (-) TimerEvent: {}
+[56.471015] (-) TimerEvent: {}
+[56.571939] (-) TimerEvent: {}
+[56.672771] (-) TimerEvent: {}
+[56.773553] (-) TimerEvent: {}
+[56.874558] (-) TimerEvent: {}
+[56.975514] (-) TimerEvent: {}
+[57.076396] (-) TimerEvent: {}
+[57.177639] (-) TimerEvent: {}
+[57.278635] (-) TimerEvent: {}
+[57.380050] (-) TimerEvent: {}
+[57.482365] (-) TimerEvent: {}
+[57.585014] (-) TimerEvent: {}
+[57.687158] (-) TimerEvent: {}
+[57.789514] (-) TimerEvent: {}
+[57.813574] (sllidar_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o\x1b[0m\n'}
+[57.889747] (-) TimerEvent: {}
+[57.991656] (-) TimerEvent: {}
+[58.094109] (-) TimerEvent: {}
+[58.196431] (-) TimerEvent: {}
+[58.298624] (-) TimerEvent: {}
+[58.400028] (-) TimerEvent: {}
+[58.501174] (-) TimerEvent: {}
+[58.561424] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[58.562151] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[58.562757] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[58.563411] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[58.564125] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[58.564758] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[58.565389] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[58.568228] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[58.572895] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[58.573502] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[58.588536] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:35\x1b[m\x1b[K:\n'}
+[58.589281] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[58.590180] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[58.591205] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[58.601756] (-) TimerEvent: {}
+[58.706169] (-) TimerEvent: {}
+[58.807778] (-) TimerEvent: {}
+[58.909475] (-) TimerEvent: {}
+[59.022577] (-) TimerEvent: {}
+[59.130761] (-) TimerEvent: {}
+[59.147466] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/hal/thread.cpp:43\x1b[m\x1b[K:\n'}
+[59.156959] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[59.162365] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:52:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wcast-function-type\x1b[m\x1b[K]\n'}
+[59.170411] (sllidar_ros2) StderrLine: {'line': b'   52 |     pthread_create((pthread_t *)&newborn._handle, NULL, \x1b[01;35m\x1b[K(void * (*)(void *))proc\x1b[m\x1b[K, data);\n'}
+[59.171595] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[59.185301] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::hal::Thread::join(long unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[59.193833] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:176:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[59.195281] (sllidar_ros2) StderrLine: {'line': b'  176 | u_result Thread::join(\x1b[01;35m\x1b[Kunsigned long timeout\x1b[m\x1b[K)\n'}
+[59.196549] (sllidar_ros2) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[59.230990] (-) TimerEvent: {}
+[59.310428] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[59.311795] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[59.320717] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[59.321884] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[59.322941] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39\x1b[m\x1b[K:\n'}
+[59.324195] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[59.328724] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[59.331075] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[59.331844] (-) TimerEvent: {}
+[59.337758] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[59.339872] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[59.344632] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[59.346659] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41\x1b[m\x1b[K,\n'}
+[59.348320] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39\x1b[m\x1b[K:\n'}
+[59.354177] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[59.354870] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[59.355694] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[59.432047] (-) TimerEvent: {}
+[59.533684] (-) TimerEvent: {}
+[59.653111] (-) TimerEvent: {}
+[59.754831] (-) TimerEvent: {}
+[59.857403] (-) TimerEvent: {}
+[59.925096] (sllidar_ros2) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_async_transceiver.cpp.o\x1b[0m\n'}
+[59.957606] (-) TimerEvent: {}
+[60.058507] (-) TimerEvent: {}
+[60.159414] (-) TimerEvent: {}
+[60.264940] (-) TimerEvent: {}
+[60.369854] (-) TimerEvent: {}
+[60.470808] (-) TimerEvent: {}
+[60.572929] (-) TimerEvent: {}
+[60.683655] (-) TimerEvent: {}
+[60.794176] (-) TimerEvent: {}
+[60.896746] (-) TimerEvent: {}
+[61.000360] (-) TimerEvent: {}
+[61.104232] (-) TimerEvent: {}
+[61.207364] (-) TimerEvent: {}
+[61.283239] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40\x1b[m\x1b[K:\n'}
+[61.284104] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[61.284918] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.285694] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[61.286788] (sllidar_ros2) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[61.287544] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.288472] (sllidar_ros2) StderrLine: {'line': b'   54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[61.289229] (sllidar_ros2) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[61.290118] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[61.290749] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.291430] (sllidar_ros2) StderrLine: {'line': b'   54 | SampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[61.292115] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[61.293075] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[61.293771] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.299801] (sllidar_ros2) StderrLine: {'line': b'   54 | Decoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[61.300722] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[61.305654] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[61.307637] (-) TimerEvent: {}
+[61.318212] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[61.319032] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.319892] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[61.320642] (sllidar_ros2) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[61.321370] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.322097] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[61.322721] (sllidar_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[61.323297] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.323929] (sllidar_ros2) StderrLine: {'line': b'   56 | l void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[61.324568] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[61.325192] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[61.325827] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[61.345799] (sllidar_ros2) StderrLine: {'line': b'   56 | dingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[61.347318] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[61.348148] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[61.414564] (-) TimerEvent: {}
+[61.515487] (-) TimerEvent: {}
+[61.616598] (-) TimerEvent: {}
+[61.719128] (-) TimerEvent: {}
+[61.834161] (-) TimerEvent: {}
+[61.974509] (-) TimerEvent: {}
+[62.078186] (-) TimerEvent: {}
+[62.132614] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[62.133357] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[62.134027] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[62.134780] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[62.135431] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[62.136094] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[62.154568] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[62.155614] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[62.156545] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[62.157278] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[62.170958] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[62.174252] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[62.177160] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[62.179527] (-) TimerEvent: {}
+[62.182721] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[62.280199] (-) TimerEvent: {}
+[62.382514] (-) TimerEvent: {}
+[62.484916] (-) TimerEvent: {}
+[62.586243] (-) TimerEvent: {}
+[62.691601] (-) TimerEvent: {}
+[62.794056] (-) TimerEvent: {}
+[62.895524] (-) TimerEvent: {}
+[63.001961] (-) TimerEvent: {}
+[63.103108] (-) TimerEvent: {}
+[63.202280] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[63.203376] (-) TimerEvent: {}
+[63.205396] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[63.206776] (sllidar_ros2) StderrLine: {'line': b'   67 |     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, \x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K)\n'}
+[63.208046] (sllidar_ros2) StderrLine: {'line': b'      |                                                                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[63.210670] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[63.211925] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[63.213147] (sllidar_ros2) StderrLine: {'line': b'  101 |     u_result RPlidarDriver::reset(\x1b[01;35m\x1b[K_u32 timeout\x1b[m\x1b[K)\n'}
+[63.215676] (sllidar_ros2) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[63.224491] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[63.225890] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodebuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[63.226729] (sllidar_ros2) StderrLine: {'line': b'  180 |     u_result RPlidarDriver::getScanDataWithInterval(\x1b[01;35m\x1b[Krplidar_response_measurement_node_t * nodebuffer\x1b[m\x1b[K, size_t & count)\n'}
+[63.227571] (sllidar_ros2) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[63.228276] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:112:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[63.228953] (sllidar_ros2) StderrLine: {'line': b'  180 |     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, \x1b[01;35m\x1b[Ksize_t & count\x1b[m\x1b[K)\n'}
+[63.229698] (sllidar_ros2) StderrLine: {'line': b'      |                                                                                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[63.303725] (-) TimerEvent: {}
+[63.406619] (-) TimerEvent: {}
+[63.508190] (-) TimerEvent: {}
+[63.610078] (-) TimerEvent: {}
+[63.711675] (-) TimerEvent: {}
+[63.813432] (-) TimerEvent: {}
+[63.875438] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[63.876336] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[63.881308] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[63.883205] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:35\x1b[m\x1b[K:\n'}
+[63.884167] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[63.885129] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[63.885851] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[63.888200] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[63.891132] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[63.892319] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[63.893389] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:35\x1b[m\x1b[K:\n'}
+[63.894152] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[63.894762] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[63.895287] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[63.913615] (-) TimerEvent: {}
+[64.018144] (-) TimerEvent: {}
+[64.119076] (-) TimerEvent: {}
+[64.220330] (-) TimerEvent: {}
+[64.322148] (-) TimerEvent: {}
+[64.424004] (-) TimerEvent: {}
+[64.490444] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:44\x1b[m\x1b[K:\n'}
+[64.491248] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[64.491878] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[64.492497] (sllidar_ros2) StderrLine: {'line': b'   90 |         virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[64.493089] (sllidar_ros2) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[64.524204] (-) TimerEvent: {}
+[64.626296] (-) TimerEvent: {}
+[64.728112] (-) TimerEvent: {}
+[64.830675] (-) TimerEvent: {}
+[64.931633] (-) TimerEvent: {}
+[65.033267] (-) TimerEvent: {}
+[65.136281] (-) TimerEvent: {}
+[65.242263] (-) TimerEvent: {}
+[65.335951] (sllidar_ros2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidarprotocol_codec.cpp.o\x1b[0m\n'}
+[65.342485] (-) TimerEvent: {}
+[65.444927] (-) TimerEvent: {}
+[65.547435] (-) TimerEvent: {}
+[65.649211] (-) TimerEvent: {}
+[65.751002] (-) TimerEvent: {}
+[65.853440] (-) TimerEvent: {}
+[65.955543] (-) TimerEvent: {}
+[66.057365] (-) TimerEvent: {}
+[66.159547] (-) TimerEvent: {}
+[66.261323] (-) TimerEvent: {}
+[66.364103] (-) TimerEvent: {}
+[66.466193] (-) TimerEvent: {}
+[66.567796] (-) TimerEvent: {}
+[66.669576] (-) TimerEvent: {}
+[66.771463] (-) TimerEvent: {}
+[66.876329] (-) TimerEvent: {}
+[66.978408] (-) TimerEvent: {}
+[67.079423] (-) TimerEvent: {}
+[67.187248] (-) TimerEvent: {}
+[67.290873] (-) TimerEvent: {}
+[67.392761] (-) TimerEvent: {}
+[67.494714] (-) TimerEvent: {}
+[67.596979] (-) TimerEvent: {}
+[67.698900] (-) TimerEvent: {}
+[67.799837] (-) TimerEvent: {}
+[67.900823] (-) TimerEvent: {}
+[67.904059] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[67.906480] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[67.907555] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[67.908463] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:35\x1b[m\x1b[K:\n'}
+[67.909391] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[67.933005] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[67.933714] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[67.941701] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[67.942493] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[67.944561] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[67.945237] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:35\x1b[m\x1b[K:\n'}
+[67.945918] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[67.946805] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[67.947496] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[68.001050] (-) TimerEvent: {}
+[68.102014] (-) TimerEvent: {}
+[68.203710] (-) TimerEvent: {}
+[68.305375] (-) TimerEvent: {}
+[68.407419] (-) TimerEvent: {}
+[68.508318] (-) TimerEvent: {}
+[68.609163] (-) TimerEvent: {}
+[68.710134] (-) TimerEvent: {}
+[68.811305] (-) TimerEvent: {}
+[68.912725] (-) TimerEvent: {}
+[68.963893] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:49\x1b[m\x1b[K:\n'}
+[68.964844] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[68.965252] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[68.965569] (sllidar_ros2) StderrLine: {'line': b'   90 |         virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[68.966081] (sllidar_ros2) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[69.012868] (-) TimerEvent: {}
+[69.114341] (-) TimerEvent: {}
+[69.215383] (-) TimerEvent: {}
+[69.316843] (-) TimerEvent: {}
+[69.410547] (sllidar_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o\x1b[0m\n'}
+[69.417305] (-) TimerEvent: {}
+[69.518312] (-) TimerEvent: {}
+[69.619191] (-) TimerEvent: {}
+[69.720460] (-) TimerEvent: {}
+[69.821512] (-) TimerEvent: {}
+[69.922276] (-) TimerEvent: {}
+[70.023086] (-) TimerEvent: {}
+[70.123838] (-) TimerEvent: {}
+[70.224617] (-) TimerEvent: {}
+[70.325831] (-) TimerEvent: {}
+[70.428629] (-) TimerEvent: {}
+[70.529532] (-) TimerEvent: {}
+[70.630894] (-) TimerEvent: {}
+[70.731827] (-) TimerEvent: {}
+[70.832778] (-) TimerEvent: {}
+[70.838206] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[70.839321] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[70.840159] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33\x1b[m\x1b[K:\n'}
+[70.841110] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[70.842294] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[70.845845] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[70.846776] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[70.847640] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33\x1b[m\x1b[K:\n'}
+[70.848527] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[70.849670] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[70.850760] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[70.948253] (-) TimerEvent: {}
+[71.050051] (-) TimerEvent: {}
+[71.151181] (-) TimerEvent: {}
+[71.252633] (-) TimerEvent: {}
+[71.269666] (sllidar_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o\x1b[0m\n'}
+[71.353001] (-) TimerEvent: {}
+[71.454029] (-) TimerEvent: {}
+[71.555493] (-) TimerEvent: {}
+[71.658401] (-) TimerEvent: {}
+[71.759265] (-) TimerEvent: {}
+[71.843403] (sllidar_ros2) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable sllidar_client\x1b[0m\n'}
+[71.859533] (-) TimerEvent: {}
+[71.962868] (-) TimerEvent: {}
+[72.064019] (-) TimerEvent: {}
+[72.165109] (-) TimerEvent: {}
+[72.266695] (-) TimerEvent: {}
+[72.368041] (-) TimerEvent: {}
+[72.468959] (-) TimerEvent: {}
+[72.570372] (-) TimerEvent: {}
+[72.673562] (-) TimerEvent: {}
+[72.775967] (-) TimerEvent: {}
+[72.877853] (-) TimerEvent: {}
+[72.979046] (-) TimerEvent: {}
+[73.079977] (-) TimerEvent: {}
+[73.181313] (-) TimerEvent: {}
+[73.284044] (-) TimerEvent: {}
+[73.352826] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[73.354688] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[73.357542] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[73.359466] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[73.360765] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[73.362135] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[73.372421] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[73.373512] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[73.374249] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[73.375126] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[73.375794] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[73.385423] (-) TimerEvent: {}
+[73.418804] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::TcpChannel::setStatus(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[73.419725] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:109:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[73.420644] (sllidar_ros2) StderrLine: {'line': b'  109 |         void setStatus(\x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K){}\n'}
+[73.421537] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[73.485824] (-) TimerEvent: {}
+[73.588075] (-) TimerEvent: {}
+[73.699382] (-) TimerEvent: {}
+[73.785520] (sllidar_ros2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o\x1b[0m\n'}
+[73.799622] (-) TimerEvent: {}
+[73.901142] (-) TimerEvent: {}
+[74.005185] (-) TimerEvent: {}
+[74.107393] (-) TimerEvent: {}
+[74.209400] (-) TimerEvent: {}
+[74.310737] (-) TimerEvent: {}
+[74.412623] (-) TimerEvent: {}
+[74.514154] (-) TimerEvent: {}
+[74.616143] (-) TimerEvent: {}
+[74.637912] (sllidar_ros2) StdoutLine: {'line': b'[ 85%] Built target sllidar_client\n'}
+[74.716350] (-) TimerEvent: {}
+[74.817171] (-) TimerEvent: {}
+[74.918145] (-) TimerEvent: {}
+[75.019051] (-) TimerEvent: {}
+[75.119898] (-) TimerEvent: {}
+[75.220679] (-) TimerEvent: {}
+[75.257275] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[75.257839] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[75.258332] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[75.258815] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[75.259438] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[75.259833] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[75.260184] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[75.260557] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33\x1b[m\x1b[K:\n'}
+[75.260897] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[75.261264] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[75.261667] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[75.275247] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::UdpChannel::setStatus(_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[75.275947] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:112:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflag\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[75.276468] (sllidar_ros2) StderrLine: {'line': b'  112 |         void setStatus(\x1b[01;35m\x1b[K_u32 flag\x1b[m\x1b[K){}\n'}
+[75.276878] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~^~~~\x1b[m\x1b[K\n'}
+[75.320873] (-) TimerEvent: {}
+[75.421658] (-) TimerEvent: {}
+[75.475895] (sllidar_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o\x1b[0m\n'}
+[75.521874] (-) TimerEvent: {}
+[75.622724] (-) TimerEvent: {}
+[75.723429] (-) TimerEvent: {}
+[75.824227] (-) TimerEvent: {}
+[75.925014] (-) TimerEvent: {}
+[76.025830] (-) TimerEvent: {}
+[76.126680] (-) TimerEvent: {}
+[76.227352] (-) TimerEvent: {}
+[76.328133] (-) TimerEvent: {}
+[76.428982] (-) TimerEvent: {}
+[76.529719] (-) TimerEvent: {}
+[76.630711] (-) TimerEvent: {}
+[76.731512] (-) TimerEvent: {}
+[76.832954] (-) TimerEvent: {}
+[76.933772] (-) TimerEvent: {}
+[77.034660] (-) TimerEvent: {}
+[77.135382] (-) TimerEvent: {}
+[77.236132] (-) TimerEvent: {}
+[77.336874] (-) TimerEvent: {}
+[77.437792] (-) TimerEvent: {}
+[77.539095] (-) TimerEvent: {}
+[77.639901] (-) TimerEvent: {}
+[77.693879] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36\x1b[m\x1b[K,\n'}
+[77.695044] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:39\x1b[m\x1b[K,\n'}
+[77.696039] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[77.696827] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[77.697832] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[77.699737] (sllidar_ros2) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[77.700393] (sllidar_ros2) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[77.701348] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36\x1b[m\x1b[K,\n'}
+[77.702402] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/rplidar.h:40\x1b[m\x1b[K,\n'}
+[77.702916] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sdkcommon.h:49\x1b[m\x1b[K,\n'}
+[77.703458] (sllidar_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33\x1b[m\x1b[K:\n'}
+[77.704006] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[77.704647] (sllidar_ros2) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[77.705262] (sllidar_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[77.740266] (-) TimerEvent: {}
+[77.841060] (-) TimerEvent: {}
+[77.942064] (-) TimerEvent: {}
+[78.043153] (-) TimerEvent: {}
+[78.144026] (-) TimerEvent: {}
+[78.244777] (-) TimerEvent: {}
+[78.345609] (-) TimerEvent: {}
+[78.446719] (-) TimerEvent: {}
+[78.547554] (-) TimerEvent: {}
+[78.648401] (-) TimerEvent: {}
+[78.649720] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:50\x1b[m\x1b[K:\n'}
+[78.651384] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onCustomSampleDataDecoded(_u8, _u32, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.652044] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.652542] (sllidar_ros2) StderrLine: {'line': b'   54 |         virtual void onCustomSampleDataDecoded(\x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, _u32 customCode, const void* data, size_t size) {}\n'}
+[78.653196] (sllidar_ros2) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[78.653693] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KcustomCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.654436] (sllidar_ros2) StderrLine: {'line': b'   54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, \x1b[01;35m\x1b[K_u32 customCode\x1b[m\x1b[K, const void* data, size_t size) {}\n'}
+[78.654960] (sllidar_ros2) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.655484] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.655881] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.656316] (sllidar_ros2) StderrLine: {'line': b'   54 | SampleDataDecoded(_u8 ansType, _u32 customCode, \x1b[01;35m\x1b[Kconst void* data\x1b[m\x1b[K, size_t size) {}\n'}
+[78.656772] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[78.657197] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.657710] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.658235] (sllidar_ros2) StderrLine: {'line': b'   54 | Decoded(_u8 ansType, _u32 customCode, const void* data, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[78.658726] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[78.659182] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.659654] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::LIDARSampleDataListener::onDecodingError(int, _u8, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.660187] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrMsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.660668] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(\x1b[01;35m\x1b[Kint errMsg\x1b[m\x1b[K, _u8 ansType, const void* payload, size_t size) {}\n'}
+[78.661129] (sllidar_ros2) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[78.661619] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KansType\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.663666] (sllidar_ros2) StderrLine: {'line': b'   56 |         virtual void onDecodingError(int errMsg, \x1b[01;35m\x1b[K_u8 ansType\x1b[m\x1b[K, const void* payload, size_t size) {}\n'}
+[78.664258] (sllidar_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[78.664770] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.665249] (sllidar_ros2) StderrLine: {'line': b'   56 | l void onDecodingError(int errMsg, _u8 ansType, \x1b[01;35m\x1b[Kconst void* payload\x1b[m\x1b[K, size_t size) {}\n'}
+[78.665791] (sllidar_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[78.666622] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.667137] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.667820] (sllidar_ros2) StderrLine: {'line': b'   56 | dingError(int errMsg, _u8 ansType, const void* payload, \x1b[01;35m\x1b[Ksize_t size\x1b[m\x1b[K) {}\n'}
+[78.668348] (sllidar_ros2) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[78.668857] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.696460] (sllidar_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:51\x1b[m\x1b[K:\n'}
+[78.697255] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void sl::internal::IAsyncProtocolCodec::onChannelError(u_result)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.697875] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KerrCode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.698660] (sllidar_ros2) StderrLine: {'line': b'   90 |         virtual void   onChannelError(\x1b[01;35m\x1b[Ku_result errCode\x1b[m\x1b[K) {}\n'}
+[78.699165] (sllidar_ros2) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[78.748611] (-) TimerEvent: {}
+[78.799729] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.800406] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:511:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.800937] (sllidar_ros2) StderrLine: {'line': b'  511 |         sl_result reset(\x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[78.801425] (sllidar_ros2) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.815578] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.816252] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:586:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.816802] (sllidar_ros2) StderrLine: {'line': b'  586 | sl_result startScan(bool force, bool useTypicalScan, \x1b[01;35m\x1b[Ksl_u32 options = 0\x1b[m\x1b[K, LidarScanMode* outUsedScanMode = nullptr)\n'}
+[78.817339] (sllidar_ros2) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.817843] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.824157] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.824892] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:763:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.825359] (sllidar_ros2) StderrLine: {'line': b'  763 |         sl_result stop(\x1b[01;35m\x1b[Ksl_u32 timeout = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[78.825758] (sllidar_ros2) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.831163] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.831753] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:880:110:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Knodes\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.832176] (sllidar_ros2) StderrLine: {'line': b'  880 | e& scanMode, \x1b[01;35m\x1b[Kconst sl_lidar_response_measurement_node_hq_t* nodes\x1b[m\x1b[K, size_t count, float& frequency)\n'}
+[78.832550] (sllidar_ros2) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[78.832915] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.840226] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.840863] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1023:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.841282] (sllidar_ros2) StderrLine: {'line': b' 1023 |    sl_result getMotorInfo(LidarMotorInfo &motorInfo, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs\x1b[m\x1b[K)\n'}
+[78.841658] (sllidar_ros2) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.842176] (sllidar_ros2) StderrLine: {'line': b'\n'}
+[78.845245] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Ku_result sl::SlamtecLidarDriver::getScanModeCount(sl_u16&, sl_u32)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[78.845783] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1199:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KtimeoutInMs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[78.846318] (sllidar_ros2) StderrLine: {'line': b' 1199 |         u_result getScanModeCount(sl_u16& modeCount, \x1b[01;35m\x1b[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT\x1b[m\x1b[K)\n'}
+[78.846724] (sllidar_ros2) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[78.848751] (-) TimerEvent: {}
+[78.949590] (-) TimerEvent: {}
+[79.017853] (sllidar_ros2) StderrLine: {'line': b'/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid sl::RawSampleNodeHolder<T>::pushNode(_u64, const T*) [with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[79.018635] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1648:42:\x1b[m\x1b[K   required from here\n'}
+[79.019063] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:202:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimestamp_uS\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[79.019476] (sllidar_ros2) StderrLine: {'line': b'  202 |         void pushNode(\x1b[01;35m\x1b[K_u64 timestamp_uS\x1b[m\x1b[K, const T* node)\n'}
+[79.019898] (sllidar_ros2) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.049764] (-) TimerEvent: {}
+[79.150771] (-) TimerEvent: {}
+[79.251630] (-) TimerEvent: {}
+[79.352553] (-) TimerEvent: {}
+[79.453343] (-) TimerEvent: {}
+[79.534503] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:\x1b[m\x1b[K At global scope:\n'}
+[79.536171] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:83:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[79.537511] (sllidar_ros2) StderrLine: {'line': b'   83 |     static void \x1b[01;35m\x1b[Kconvert\x1b[m\x1b[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)\n'}
+[79.542829] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[79.544332] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:75:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::convert(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[79.545284] (sllidar_ros2) StderrLine: {'line': b'   75 |     static void \x1b[01;35m\x1b[Kconvert\x1b[m\x1b[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)\n'}
+[79.550792] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[79.551596] (sllidar_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cewan/Automated-Tour-Car/ws_lidar/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:70:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid sl::printDeprecationWarn(const char*, const char*)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[79.552328] (sllidar_ros2) StderrLine: {'line': b'   70 |     static void \x1b[01;35m\x1b[KprintDeprecationWarn\x1b[m\x1b[K(const char* fn, const char* replacement)\n'}
+[79.553050] (sllidar_ros2) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.553682] (-) TimerEvent: {}
+[79.661217] (-) TimerEvent: {}
+[79.762246] (-) TimerEvent: {}
+[79.863291] (-) TimerEvent: {}
+[79.964118] (-) TimerEvent: {}
+[80.064969] (-) TimerEvent: {}
+[80.167835] (-) TimerEvent: {}
+[80.268631] (-) TimerEvent: {}
+[80.369366] (-) TimerEvent: {}
+[80.470388] (-) TimerEvent: {}
+[80.571332] (-) TimerEvent: {}
+[80.672179] (-) TimerEvent: {}
+[80.772994] (-) TimerEvent: {}
+[80.873874] (-) TimerEvent: {}
+[80.974919] (-) TimerEvent: {}
+[81.075708] (-) TimerEvent: {}
+[81.176514] (-) TimerEvent: {}
+[81.184430] (sllidar_ros2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable sllidar_node\x1b[0m\n'}
+[81.276715] (-) TimerEvent: {}
+[81.377488] (-) TimerEvent: {}
+[81.479728] (-) TimerEvent: {}
+[81.582713] (-) TimerEvent: {}
+[81.683702] (-) TimerEvent: {}
+[81.784528] (-) TimerEvent: {}
+[81.885422] (-) TimerEvent: {}
+[81.986387] (-) TimerEvent: {}
+[82.088492] (-) TimerEvent: {}
+[82.190719] (-) TimerEvent: {}
+[82.291597] (-) TimerEvent: {}
+[82.392776] (-) TimerEvent: {}
+[82.493704] (-) TimerEvent: {}
+[82.594823] (-) TimerEvent: {}
+[82.695875] (-) TimerEvent: {}
+[82.735302] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_node\n'}
+[82.772659] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 'SIGINT'}
+[82.776690] (-) EventReactorShutdown: {}

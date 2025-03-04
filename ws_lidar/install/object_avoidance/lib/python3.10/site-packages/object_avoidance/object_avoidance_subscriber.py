@@ -67,7 +67,6 @@ class PCA9685:
     pulse = pulse*4096/20000        #PWM frequency is 50HZ,the period is 20000us
     self.setPWM(channel, 0, int(pulse))
 
-
 class Adc:
     def __init__(self):
         # Get I2C bus
@@ -225,12 +224,39 @@ class Motor:
             time.sleep(5*self.time_proportion*bat_compensate/1000)
             angle -= 5
 
+class Servo:
+    def __init__(self):
+        self.pwm_frequency = 50
+        self.initial_pulse = 1500
+        self.pwm_channel_map = {
+            '0': 8,
+            '1': 9,
+            '2': 10,
+            '3': 11,
+            '4': 12,
+            '5': 13,
+            '6': 14,
+            '7': 15
+        }
+        self.pwm_servo = PCA9685(0x40, debug=True)
+        self.pwm_servo.setPWMFreq(self.pwm_frequency)
+        for channel in self.pwm_channel_map.values():
+            self.pwm_servo.setServoPulse(channel, self.initial_pulse)
+
+    def set_servo_pwm(self, channel: str, angle: int, error: int = 10) -> None:
+        angle = int(angle)
+        if channel not in self.pwm_channel_map:
+            raise ValueError(f"Invalid channel: {channel}. Valid channels are {list(self.pwm_channel_map.keys())}.")
+        # For channel '0', we assume the servo orientation is reversed.
+        pulse = 2500 - int((angle + error) / 0.09) if channel == '0' else 500 + int((angle + error) / 0.09)
+        self.pwm_servo.setServoPulse(self.pwm_channel_map[channel], pulse)
 
 class CmdVelSubscriber(Node):
     def __init__(self):
         super().__init__('cmd_vel_subscriber')
         self.motor = Motor()
-
+        self.servo = Servo()
+        self.servo.set_servo_pwm('0', 25)
         self.subscription = self.create_subscription(
             Twist,
             '/cmd_vel',
@@ -238,55 +264,29 @@ class CmdVelSubscriber(Node):
             10)
         self.get_logger().info("Listening for /cmd_vel messages...")
 
-        self.last_received_time = time.time()
-
-        # ✅ Adjusted PWM Values for Controlled Motion
-        self.max_turn_pwm = 1800  # Lower than 2000 to prevent excessive turns
-        self.max_forward_pwm = 1000  # Smooth forward movement
-        self.min_pwm = 800  # Ensures motors always get enough power
-        self.base_turn_time = 0.5  # 🔹 Base time for small adjustments
-
-        self.wheel_base = 0.2  # Distance between left and right wheels (meters)
-
     def listener_callback(self, msg):
         linear_x = msg.linear.x  # Forward/backward speed
-        angular_z = msg.angular.z  # Rotation speed
+        angular_z = msg.angular.z  # Steering angle request
 
-        if abs(angular_z) > 0:  # ✅ **Turning Required**
-            turn_intensity = min(abs(angular_z), 1.0)  # 🔹 Normalize turn intensity (0-1)
-            turn_duration = self.base_turn_time #+ (turn_intensity * 0.7)  # 🔹 Adjust turn duration dynamically
+        if angular_z > 0:  # Left Turn
+            steering_angle = 35
+        elif angular_z < 0:  # Right Turn
+            steering_angle = 15
+        else:
+            steering_angle = 25  # Keep straight
 
-            left_pwm = self.max_turn_pwm if angular_z > 0 else -self.max_turn_pwm
-            right_pwm = -self.max_turn_pwm if angular_z > 0 else self.max_turn_pwm
+        self.servo.set_servo_pwm('0', steering_angle)
+        self.get_logger().info(f"Steering: {steering_angle}°")
 
-            self.get_logger().info(f"Turning (Z={angular_z}) for {turn_duration:.2f}s | PWM: Left={left_pwm}, Right={right_pwm}")
-
-            # Apply turn for calculated duration
-            self.motor.setMotorModel(left_pwm, left_pwm, right_pwm, right_pwm)
-            time.sleep(turn_duration)
-
-            # Stop movement after turn
+        if linear_x > 0:
+            # Move forward
+            self.motor.setMotorModel(0, 2000, 0, 2000)
+        elif linear_x < 0:
+            # Move backward
+            self.motor.setMotorModel(0, -2000, 0, -2000)
+        else:
+            # Stop
             self.motor.setMotorModel(0, 0, 0, 0)
-            self.get_logger().info("Turn complete, stopping motors.")
-
-        else:  # ✅ **Moving Forward**
-            left_speed = linear_x
-            right_speed = linear_x
-
-            left_pwm = int(left_speed * self.max_forward_pwm)
-            right_pwm = int(right_speed * self.max_forward_pwm)
-
-            # ✅ **Ensure Minimum PWM Threshold**
-            if left_pwm != 0:
-                left_pwm = max(self.min_pwm, abs(left_pwm)) * (1 if left_pwm > 0 else -1)
-            if right_pwm != 0:
-                right_pwm = max(self.min_pwm, abs(right_pwm)) * (1 if right_pwm > 0 else -1)
-
-            self.get_logger().info(f"Moving Forward | PWM: Left={left_pwm}, Right={right_pwm}")
-            self.motor.setMotorModel(left_pwm, left_pwm, right_pwm, right_pwm)
-
-        # ✅ **Update Last Received Time**
-        self.last_received_time = time.time()
 
 def main(args=None):
     rclpy.init(args=args)

@@ -17,12 +17,12 @@ class AutoDecisionNode(Node):
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.lidar_callback, 10)
         self.get_logger().info("Subscribed to /scan topic")
 
-        # **Thresholds**
+        # Thresholds
         self.distance_threshold = 0.8  # Start avoiding at 0.8m
-        self.emergency_threshold = 0.5  # Reverse if obstacle < 0.5m
+        self.emergency_threshold = 0.3  # Reverse if obstacle < 0.5m
         self.reverse_time = 2.0  # Reverse for 1 second
-        self.reverse_speed = -0.5  # Reverse speed
-        self.max_speed = 1.0  # Max forward speed
+        self.reverse_speed = -10.0  # Reverse speed
+        self.max_speed = 10.0  # Max forward speed
 
         self.get_logger().info(f"Thresholds set: distance={self.distance_threshold}, emergency={self.emergency_threshold}, max_speed={self.max_speed}")
 
@@ -32,7 +32,7 @@ class AutoDecisionNode(Node):
         self.range_max = data.range_max
         ranges = [r if r != float("inf") else self.range_max for r in data.ranges]
 
-        # **Find the minimum distance in each front-facing zone**
+        # Find the minimum distance in each front-facing 
         min_left1 = min(ranges[self.number_of_readings*11//12:self.number_of_readings])  # 330°-360°
         min_left2 = min(ranges[self.number_of_readings*5//6:self.number_of_readings*11//12])  # 300°-330°
         min_left3 = min(ranges[self.number_of_readings*3//4:self.number_of_readings*5//6])  # 270°-300°
@@ -43,7 +43,7 @@ class AutoDecisionNode(Node):
 
         cmd_vel = Twist()
 
-        # **Step 1: PRIORITY EMERGENCY REVERSING**
+        # PRIORITY EMERGENCY REVERSING
         if (
             min_left1 < self.emergency_threshold or
             min_left2 < self.emergency_threshold or
@@ -54,25 +54,25 @@ class AutoDecisionNode(Node):
         ):
             self.get_logger().warn(f"🚨 Emergency Reverse! Obstacle detected at {round(min(min_left1, min_right1), 2)}m")
 
-            # **Move backward**
+            # Move backward
             cmd_vel.linear.x = self.reverse_speed  # Reverse speed (-0.5)
             cmd_vel.angular.z = 0.0  # No turning while reversing
             self.twist_pub.publish(cmd_vel)
             self.get_logger().info(f"Reversing for {self.reverse_time}s | Speed: {self.reverse_speed}")
 
-            # **Wait while reversing**
+            # Wait while reversing
             time.sleep(self.reverse_time)
 
-            # **Continue normal avoidance after reversing**
+            # Continue normal avoidance after reversing
             self.get_logger().info("Finished reversing. Resuming obstacle avoidance.")
 
-        # **Step 2: NORMAL OBSTACLE AVOIDANCE (Turn if needed)**
+        # NORMAL OBSTACLE AVOIDANCE (Turn if needed)
         if min_left1 < self.distance_threshold:  
-            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.linear.x = self.max_speed #/ 2
             cmd_vel.angular.z = -self.max_speed * 1.0  # Adjusted for softer turns
             self.get_logger().info(f"Turn left 1 - Obstacle at {round(min_left1, 2)}m")
         elif min_left2 < self.distance_threshold:
-            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.linear.x = self.max_speed #/ 2
             cmd_vel.angular.z = -self.max_speed * 1.0
             self.get_logger().info(f"Turn left 2 - Obstacle at {round(min_left2, 2)}m")
         elif min_left3 < self.distance_threshold:
@@ -80,11 +80,11 @@ class AutoDecisionNode(Node):
             cmd_vel.angular.z = -self.max_speed * 1.0
             self.get_logger().info(f"Turn left 3 - Obstacle at {round(min_left3, 2)}m")
         elif min_right1 < self.distance_threshold:  
-            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.linear.x = self.max_speed #/ 2
             cmd_vel.angular.z = self.max_speed * 1.0
             self.get_logger().info(f"Turn right 1 - Obstacle at {round(min_right1, 2)}m")
         elif min_right2 < self.distance_threshold:
-            cmd_vel.linear.x = self.max_speed / 2
+            cmd_vel.linear.x = self.max_speed #/ 2
             cmd_vel.angular.z = self.max_speed * 1.0
             self.get_logger().info(f"Turn right 2 - Obstacle at {round(min_right2, 2)}m")
         elif min_right3 < self.distance_threshold:

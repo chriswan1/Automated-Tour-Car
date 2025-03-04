@@ -35,10 +35,12 @@ class RRTNode(Node):
         x_start_real, y_start_real, x_goal_real, y_goal_real = msg.data
         self.get_logger().info(f'Received start and goal coordinates: {msg.data}')
         
-        x_start_index = int(round((x_start_real - self.origin[0]) / self.resolution))
-        y_start_index = int(round((y_start_real - self.origin[1]) / self.resolution))
-        x_goal_index = int(round((x_goal_real - self.origin[0]) / self.resolution))
-        y_goal_index = int(round((y_goal_real - self.origin[1]) / self.resolution))
+        x_start_index = x_start_real #int(round((x_start_real - self.origin[0]) / self.resolution))
+        y_start_index = y_start_real #int(round((y_start_real - self.origin[1]) / self.resolution))
+        x_goal_index = x_goal_real# int(round((x_goal_real - self.origin[0]) / self.resolution))
+        y_goal_index = y_goal_real# int(round((y_goal_real - self.origin[1]) / self.resolution))
+
+        self.get_logger().info(f'Scaled goal coordinates: {x_goal_index, y_goal_index}')
 
         start = [x_start_index, y_start_index]
         goal = [x_goal_index, y_goal_index]

@@ -60,7 +60,6 @@ class MotionPlanner(Node):
         ]
         self.publisher_start_goal.publish(start_goal_msg)
         self.get_logger().info(f'Sent start goal: {start_goal_msg.data}')
-        time.sleep(5)
 
     def trajectory_callback(self, msg):
         """ Receives and processes the RRT path. """
@@ -100,8 +99,8 @@ class MotionPlanner(Node):
             self.send_start_goal()  # Trigger re-planning with RRT
 
     def is_close_to(self, position):
-        """ Checks if the car is within 10 pixels of the path. """
-        pixel_threshold = 10  # Define threshold in pixels
+        """ Checks if the car is within 40 pixels of the path ~4 meters. """
+        pixel_threshold = 40  # Define threshold in pixels
         distance = math.sqrt((self.current_position[0] - position[0]) ** 2 + 
                              (self.current_position[1] - position[1]) ** 2)
         return distance < pixel_threshold * self.resolution  # Convert pixels to meters
@@ -115,3 +114,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
