@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001685] (-) JobUnselected: {'identifier': 'gpsPubSub'}
+[0.001960] (-) JobUnselected: {'identifier': 'lidar'}
+[0.002284] (-) JobUnselected: {'identifier': 'object_avoidance'}
+[0.002455] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002552] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.002645] (-) JobUnselected: {'identifier': 'tour_mapping_and_localization'}
+[0.002738] (TurtleBot) JobQueued: {'identifier': 'TurtleBot', 'dependencies': OrderedDict()}
+[0.002885] (TurtleBot) JobStarted: {'identifier': 'TurtleBot'}
+[0.097438] (-) TimerEvent: {}
+[0.198295] (-) TimerEvent: {}
+[0.299858] (-) TimerEvent: {}
+[0.400511] (-) TimerEvent: {}
+[0.501180] (-) TimerEvent: {}
+[0.601803] (-) TimerEvent: {}
+[0.702876] (-) TimerEvent: {}
+[0.803606] (-) TimerEvent: {}
+[0.904270] (-) TimerEvent: {}
+[1.004945] (-) TimerEvent: {}
+[1.105683] (-) TimerEvent: {}
+[1.206313] (-) TimerEvent: {}
+[1.306949] (-) TimerEvent: {}
+[1.407630] (-) TimerEvent: {}
+[1.508623] (-) TimerEvent: {}
+[1.609744] (-) TimerEvent: {}
+[1.710548] (-) TimerEvent: {}
+[1.811649] (-) TimerEvent: {}
+[1.912701] (-) TimerEvent: {}
+[2.013565] (-) TimerEvent: {}
+[2.115602] (-) TimerEvent: {}
+[2.216489] (-) TimerEvent: {}
+[2.317213] (-) TimerEvent: {}
+[2.417818] (-) TimerEvent: {}
+[2.518449] (-) TimerEvent: {}
+[2.619288] (-) TimerEvent: {}
+[2.721015] (-) TimerEvent: {}
+[2.821637] (-) TimerEvent: {}
+[2.922319] (-) TimerEvent: {}
+[3.023096] (-) TimerEvent: {}
+[3.123792] (-) TimerEvent: {}
+[3.224393] (-) TimerEvent: {}
+[3.325038] (-) TimerEvent: {}
+[3.425783] (-) TimerEvent: {}
+[3.526950] (-) TimerEvent: {}
+[3.558517] (TurtleBot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/TurtleBot', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/TurtleBot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '192.168.0.28 61078 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '117', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/tour_mapping_and_localization:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control:/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot', 'SSH_CONNECTION': '192.168.0.28 61078 192.168.0.76 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/tour_mapping_and_localization:/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[3.627126] (-) TimerEvent: {}
+[3.727914] (-) TimerEvent: {}
+[3.828747] (-) TimerEvent: {}
+[3.929513] (-) TimerEvent: {}
+[4.030199] (-) TimerEvent: {}
+[4.130842] (-) TimerEvent: {}
+[4.231437] (-) TimerEvent: {}
+[4.332047] (-) TimerEvent: {}
+[4.432783] (-) TimerEvent: {}
+[4.533533] (-) TimerEvent: {}
+[4.634180] (-) TimerEvent: {}
+[4.734954] (-) TimerEvent: {}
+[4.836536] (-) TimerEvent: {}
+[4.937305] (-) TimerEvent: {}
+[5.038405] (-) TimerEvent: {}
+[5.098536] (TurtleBot) StdoutLine: {'line': b'running egg_info\n'}
+[5.100219] (TurtleBot) StdoutLine: {'line': b'writing ../../build/TurtleBot/TurtleBot.egg-info/PKG-INFO\n'}
+[5.101465] (TurtleBot) StdoutLine: {'line': b'writing dependency_links to ../../build/TurtleBot/TurtleBot.egg-info/dependency_links.txt\n'}
+[5.103391] (TurtleBot) StdoutLine: {'line': b'writing entry points to ../../build/TurtleBot/TurtleBot.egg-info/entry_points.txt\n'}
+[5.105380] (TurtleBot) StdoutLine: {'line': b'writing requirements to ../../build/TurtleBot/TurtleBot.egg-info/requires.txt\n'}
+[5.106029] (TurtleBot) StdoutLine: {'line': b'writing top-level names to ../../build/TurtleBot/TurtleBot.egg-info/top_level.txt\n'}
+[5.115873] (TurtleBot) StdoutLine: {'line': b"reading manifest file '../../build/TurtleBot/TurtleBot.egg-info/SOURCES.txt'\n"}
+[5.121066] (TurtleBot) StdoutLine: {'line': b"writing manifest file '../../build/TurtleBot/TurtleBot.egg-info/SOURCES.txt'\n"}
+[5.122056] (TurtleBot) StdoutLine: {'line': b'running build\n'}
+[5.122520] (TurtleBot) StdoutLine: {'line': b'running build_py\n'}
+[5.125821] (TurtleBot) StdoutLine: {'line': b'running install\n'}
+[5.127833] (TurtleBot) StdoutLine: {'line': b'running install_lib\n'}
+[5.138570] (-) TimerEvent: {}
+[5.141457] (TurtleBot) StdoutLine: {'line': b'running install_data\n'}
+[5.142243] (TurtleBot) StdoutLine: {'line': b'copying launch/rrt_launch.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/share/TurtleBot/launch\n'}
+[5.142972] (TurtleBot) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.150510] (TurtleBot) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages/TurtleBot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.152088] (TurtleBot) StdoutLine: {'line': b'Copying ../../build/TurtleBot/TurtleBot.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages/TurtleBot-0.0.0-py3.10.egg-info\n'}
+[5.157559] (TurtleBot) StdoutLine: {'line': b'running install_scripts\n'}
+[5.238733] (-) TimerEvent: {}
+[5.239283] (TurtleBot) StdoutLine: {'line': b'Installing Motion_Planner script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[5.239994] (TurtleBot) StdoutLine: {'line': b'Installing PID_Controller script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[5.240880] (TurtleBot) StdoutLine: {'line': b'Installing map_subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[5.241767] (TurtleBot) StdoutLine: {'line': b'Installing rrt_node script to /home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/TurtleBot\n'}
+[5.243683] (TurtleBot) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/TurtleBot/install.log'\n"}
+[5.338942] (-) TimerEvent: {}
+[5.365926] (TurtleBot) CommandEnded: {'returncode': 0}
+[5.431669] (TurtleBot) JobEnded: {'identifier': 'TurtleBot', 'rc': 0}
+[5.438752] (-) EventReactorShutdown: {}

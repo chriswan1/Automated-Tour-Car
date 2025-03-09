@@ -28,6 +28,8 @@ setup(
             'turntest=object_avoidance.turntest:main',
             'wall_follower=object_avoidance.wall_follower:main',
             'servo_turn=object_avoidance.servo_turn:main',
+            'test_publisher=object_avoidance.test_publisher:main',
+            'test_subscriber=object_avoidance.test_subscriber:main',
         ],
     },
 )

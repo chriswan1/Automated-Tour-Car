@@ -1,0 +1,37 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 5.0
+    sensor_timeout: 2.0
+    two_d_mode: true
+    
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+    
+    # GPS odometry input
+    odom0: /odometry/gps
+    odom0_config: [true, true, false, 
+                  false, false, false, 
+                  false, false, false, 
+                  false, false, false, 
+                  false, false, false]
+    odom0_queue_size: 3
+    odom0_relative: false
+    odom0_use_message_covariance: true
+    
+    # IMU input
+    imu0: /imu/data_filtered
+    imu0_config: [false, false, false, 
+                 false, false, false,  # Only use yaw for orientation
+                 false, false, false, 
+                 false, false, true,  # Use angular velocity z
+                 true, false, false]   # Use x and y linear acceleration
+    imu0_queue_size: 3
+    imu0_relative: false
+    imu0_use_message_covariance: true
+    imu0_remove_gravitational_acceleration: true
+    im0_pose_rejection_threshold: 0.5
+    im0_linear_acceleration_rejection_threshold: 0.8
+
+

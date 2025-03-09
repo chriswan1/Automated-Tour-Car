@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 from launch.actions import ExecuteProcess, TimerAction
 
 def generate_launch_description():
-    map_yaml_path = "/home/cewan/Automated-Tour-Car/ws_lidar/engr_map.yaml"
+    map_yaml_path = "/home/cewan/Automated-Tour-Car/ws_lidar/ramp.yaml"
 
     return LaunchDescription([
         # Start the PID Controller

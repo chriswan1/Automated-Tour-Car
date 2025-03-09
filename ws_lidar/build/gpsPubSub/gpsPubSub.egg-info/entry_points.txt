@@ -1,4 +1,10 @@
 [console_scripts]
-publisher = gpsPubSub.GPS:main
+cov_comp = gpsPubSub.cov_comparison:main
+covariance = gpsPubSub.gps_covariance_calculation:main
+covariance_test = gpsPubSub.covariance_test:main
+gps_odom = gpsPubSub.gps_odom:main
+gps_publisher = gpsPubSub.GPS:main
+imu_publisher = gpsPubSub.mpu_publisher:main
+position = gpsPubSub.pos_mon:main
 subscriber = gpsPubSub.subscribeGPS:main
 

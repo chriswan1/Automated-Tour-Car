@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.002787] (-) JobUnselected: {'identifier': 'TurtleBot'}
+[0.004491] (-) JobUnselected: {'identifier': 'lidar'}
+[0.004858] (-) JobUnselected: {'identifier': 'object_avoidance'}
+[0.005405] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.005661] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.005810] (-) JobUnselected: {'identifier': 'tour_mapping_and_localization'}
+[0.005997] (gpsPubSub) JobQueued: {'identifier': 'gpsPubSub', 'dependencies': OrderedDict()}
+[0.006154] (gpsPubSub) JobStarted: {'identifier': 'gpsPubSub'}
+[0.099019] (-) TimerEvent: {}
+[0.199693] (-) TimerEvent: {}
+[0.300420] (-) TimerEvent: {}
+[0.401522] (-) TimerEvent: {}
+[0.502162] (-) TimerEvent: {}
+[0.602877] (-) TimerEvent: {}
+[0.703480] (-) TimerEvent: {}
+[0.804094] (-) TimerEvent: {}
+[0.904772] (-) TimerEvent: {}
+[1.005545] (-) TimerEvent: {}
+[1.106303] (-) TimerEvent: {}
+[1.207742] (-) TimerEvent: {}
+[1.308880] (-) TimerEvent: {}
+[1.409879] (-) TimerEvent: {}
+[1.510557] (-) TimerEvent: {}
+[1.611198] (-) TimerEvent: {}
+[1.711875] (-) TimerEvent: {}
+[1.813469] (-) TimerEvent: {}
+[1.914361] (-) TimerEvent: {}
+[2.015079] (-) TimerEvent: {}
+[2.115824] (-) TimerEvent: {}
+[2.216609] (-) TimerEvent: {}
+[2.317321] (-) TimerEvent: {}
+[2.418044] (-) TimerEvent: {}
+[2.518892] (-) TimerEvent: {}
+[2.619863] (-) TimerEvent: {}
+[2.720654] (-) TimerEvent: {}
+[2.822609] (-) TimerEvent: {}
+[2.923485] (-) TimerEvent: {}
+[3.024685] (-) TimerEvent: {}
+[3.048221] (gpsPubSub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gpsPubSub', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/gpsPubSub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 65207 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan/Automated-Tour-Car/ws_lidar/src', 'SSH_TTY': '/dev/pts/0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '90', 'PATH': '/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub', 'SSH_CONNECTION': '172.20.10.13 65207 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:'}, 'shell': False}
+[3.125370] (-) TimerEvent: {}
+[3.226208] (-) TimerEvent: {}
+[3.327067] (-) TimerEvent: {}
+[3.427764] (-) TimerEvent: {}
+[3.528433] (-) TimerEvent: {}
+[3.629439] (-) TimerEvent: {}
+[3.730150] (-) TimerEvent: {}
+[3.830781] (-) TimerEvent: {}
+[3.931471] (-) TimerEvent: {}
+[4.032207] (-) TimerEvent: {}
+[4.124195] (gpsPubSub) StdoutLine: {'line': b'running egg_info\n'}
+[4.126824] (gpsPubSub) StdoutLine: {'line': b'writing ../../build/gpsPubSub/gpsPubSub.egg-info/PKG-INFO\n'}
+[4.128903] (gpsPubSub) StdoutLine: {'line': b'writing dependency_links to ../../build/gpsPubSub/gpsPubSub.egg-info/dependency_links.txt\n'}
+[4.130299] (gpsPubSub) StdoutLine: {'line': b'writing entry points to ../../build/gpsPubSub/gpsPubSub.egg-info/entry_points.txt\n'}
+[4.131103] (gpsPubSub) StdoutLine: {'line': b'writing requirements to ../../build/gpsPubSub/gpsPubSub.egg-info/requires.txt\n'}
+[4.131738] (gpsPubSub) StdoutLine: {'line': b'writing top-level names to ../../build/gpsPubSub/gpsPubSub.egg-info/top_level.txt\n'}
+[4.132296] (-) TimerEvent: {}
+[4.140035] (gpsPubSub) StdoutLine: {'line': b"reading manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[4.145692] (gpsPubSub) StdoutLine: {'line': b"writing manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[4.146411] (gpsPubSub) StdoutLine: {'line': b'running build\n'}
+[4.146781] (gpsPubSub) StdoutLine: {'line': b'running build_py\n'}
+[4.150771] (gpsPubSub) StdoutLine: {'line': b'copying gpsPubSub/pos_mon.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub\n'}
+[4.152265] (gpsPubSub) StdoutLine: {'line': b'copying gpsPubSub/GPS.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub\n'}
+[4.157826] (gpsPubSub) StdoutLine: {'line': b'running install\n'}
+[4.159371] (gpsPubSub) StdoutLine: {'line': b'running install_lib\n'}
+[4.166798] (gpsPubSub) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub/pos_mon.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub\n'}
+[4.168648] (gpsPubSub) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub/GPS.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub\n'}
+[4.176576] (gpsPubSub) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub/pos_mon.py to pos_mon.cpython-310.pyc\n'}
+[4.183402] (gpsPubSub) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub/GPS.py to GPS.cpython-310.pyc\n'}
+[4.188116] (gpsPubSub) StdoutLine: {'line': b'running install_data\n'}
+[4.194263] (gpsPubSub) StdoutLine: {'line': b'copying launch/ekf.launch.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/share/gpsPubSub/launch\n'}
+[4.195964] (gpsPubSub) StdoutLine: {'line': b'copying config/navsat_config.yaml -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/share/gpsPubSub/config\n'}
+[4.196877] (gpsPubSub) StdoutLine: {'line': b'copying config/ekf_config.yaml -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/share/gpsPubSub/config\n'}
+[4.198068] (gpsPubSub) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.206447] (gpsPubSub) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.208850] (gpsPubSub) StdoutLine: {'line': b'Copying ../../build/gpsPubSub/gpsPubSub.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info\n'}
+[4.215517] (gpsPubSub) StdoutLine: {'line': b'running install_scripts\n'}
+[4.232468] (-) TimerEvent: {}
+[4.294020] (gpsPubSub) StdoutLine: {'line': b'Installing cov_comp script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.295553] (gpsPubSub) StdoutLine: {'line': b'Installing covariance script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.296439] (gpsPubSub) StdoutLine: {'line': b'Installing covariance_test script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.297296] (gpsPubSub) StdoutLine: {'line': b'Installing gps_odom script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.298198] (gpsPubSub) StdoutLine: {'line': b'Installing gps_publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.298973] (gpsPubSub) StdoutLine: {'line': b'Installing imu_publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.300104] (gpsPubSub) StdoutLine: {'line': b'Installing position script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.300907] (gpsPubSub) StdoutLine: {'line': b'Installing subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[4.303768] (gpsPubSub) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log'\n"}
+[4.332731] (-) TimerEvent: {}
+[4.421286] (gpsPubSub) CommandEnded: {'returncode': 0}
+[4.432823] (-) TimerEvent: {}
+[4.504966] (gpsPubSub) JobEnded: {'identifier': 'gpsPubSub', 'rc': 0}
+[4.508548] (-) EventReactorShutdown: {}

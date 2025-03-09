@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.001943] (-) JobUnselected: {'identifier': 'TurtleBot'}
+[0.003867] (-) JobUnselected: {'identifier': 'lidar'}
+[0.004016] (-) JobUnselected: {'identifier': 'object_avoidance'}
+[0.004114] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.004204] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.004288] (-) JobUnselected: {'identifier': 'tour_mapping_and_localization'}
+[0.004395] (gpsPubSub) JobQueued: {'identifier': 'gpsPubSub', 'dependencies': OrderedDict()}
+[0.004521] (gpsPubSub) JobStarted: {'identifier': 'gpsPubSub'}
+[0.092236] (-) TimerEvent: {}
+[0.193146] (-) TimerEvent: {}
+[0.293887] (-) TimerEvent: {}
+[0.394708] (-) TimerEvent: {}
+[0.495394] (-) TimerEvent: {}
+[0.599721] (-) TimerEvent: {}
+[0.700507] (-) TimerEvent: {}
+[0.801192] (-) TimerEvent: {}
+[0.902194] (-) TimerEvent: {}
+[1.002923] (-) TimerEvent: {}
+[1.103588] (-) TimerEvent: {}
+[1.204353] (-) TimerEvent: {}
+[1.305110] (-) TimerEvent: {}
+[1.405844] (-) TimerEvent: {}
+[1.507100] (-) TimerEvent: {}
+[1.608387] (-) TimerEvent: {}
+[1.709315] (-) TimerEvent: {}
+[1.810063] (-) TimerEvent: {}
+[1.910798] (-) TimerEvent: {}
+[2.011648] (-) TimerEvent: {}
+[2.112385] (-) TimerEvent: {}
+[2.213077] (-) TimerEvent: {}
+[2.313676] (-) TimerEvent: {}
+[2.414313] (-) TimerEvent: {}
+[2.515558] (-) TimerEvent: {}
+[2.616317] (-) TimerEvent: {}
+[2.717029] (-) TimerEvent: {}
+[2.817950] (-) TimerEvent: {}
+[2.918930] (-) TimerEvent: {}
+[3.019657] (-) TimerEvent: {}
+[3.120419] (-) TimerEvent: {}
+[3.221324] (-) TimerEvent: {}
+[3.322333] (-) TimerEvent: {}
+[3.422987] (-) TimerEvent: {}
+[3.523744] (-) TimerEvent: {}
+[3.624884] (-) TimerEvent: {}
+[3.667690] (gpsPubSub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gpsPubSub', 'build', '--build-base', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build', 'install', '--record', '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cewan/Automated-Tour-Car/ws_lidar/src/gpsPubSub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cewan', 'SSH_CLIENT': '172.20.10.13 64498 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cewan', 'OLDPWD': '/home/cewan', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cewan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '2605', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/cewan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/tour_mapping_and_localization:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control:/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub', 'SSH_CONNECTION': '172.20.10.13 64498 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/teleop_control/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/object_avoidance/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/lidar/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages:/home/cewan/Automated-Tour-Car/ws_lidar/install/TurtleBot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cewan/Automated-Tour-Car/ws_lidar/install/tour_mapping_and_localization:/home/cewan/Automated-Tour-Car/ws_lidar/install/sllidar_ros2'}, 'shell': False}
+[3.725713] (-) TimerEvent: {}
+[3.826490] (-) TimerEvent: {}
+[3.927225] (-) TimerEvent: {}
+[4.028031] (-) TimerEvent: {}
+[4.129099] (-) TimerEvent: {}
+[4.229761] (-) TimerEvent: {}
+[4.330498] (-) TimerEvent: {}
+[4.431110] (-) TimerEvent: {}
+[4.531796] (-) TimerEvent: {}
+[4.632426] (-) TimerEvent: {}
+[4.733087] (-) TimerEvent: {}
+[4.833791] (-) TimerEvent: {}
+[4.934635] (-) TimerEvent: {}
+[5.035863] (-) TimerEvent: {}
+[5.087681] (gpsPubSub) StdoutLine: {'line': b'running egg_info\n'}
+[5.091745] (gpsPubSub) StdoutLine: {'line': b'writing ../../build/gpsPubSub/gpsPubSub.egg-info/PKG-INFO\n'}
+[5.093002] (gpsPubSub) StdoutLine: {'line': b'writing dependency_links to ../../build/gpsPubSub/gpsPubSub.egg-info/dependency_links.txt\n'}
+[5.096204] (gpsPubSub) StdoutLine: {'line': b'writing entry points to ../../build/gpsPubSub/gpsPubSub.egg-info/entry_points.txt\n'}
+[5.097210] (gpsPubSub) StdoutLine: {'line': b'writing requirements to ../../build/gpsPubSub/gpsPubSub.egg-info/requires.txt\n'}
+[5.098125] (gpsPubSub) StdoutLine: {'line': b'writing top-level names to ../../build/gpsPubSub/gpsPubSub.egg-info/top_level.txt\n'}
+[5.109362] (gpsPubSub) StdoutLine: {'line': b"reading manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[5.115779] (gpsPubSub) StdoutLine: {'line': b"writing manifest file '../../build/gpsPubSub/gpsPubSub.egg-info/SOURCES.txt'\n"}
+[5.117078] (gpsPubSub) StdoutLine: {'line': b'running build\n'}
+[5.117540] (gpsPubSub) StdoutLine: {'line': b'running build_py\n'}
+[5.119116] (gpsPubSub) StdoutLine: {'line': b'copying gpsPubSub/mpu_publisher.py -> /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub\n'}
+[5.122513] (gpsPubSub) StdoutLine: {'line': b'running install\n'}
+[5.123953] (gpsPubSub) StdoutLine: {'line': b'running install_lib\n'}
+[5.133554] (gpsPubSub) StdoutLine: {'line': b'copying /home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/build/lib/gpsPubSub/mpu_publisher.py -> /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub\n'}
+[5.135972] (-) TimerEvent: {}
+[5.138954] (gpsPubSub) StdoutLine: {'line': b'byte-compiling /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub/mpu_publisher.py to mpu_publisher.cpython-310.pyc\n'}
+[5.146977] (gpsPubSub) StdoutLine: {'line': b'running install_data\n'}
+[5.149148] (gpsPubSub) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.162436] (gpsPubSub) StdoutLine: {'line': b"removing '/home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.165495] (gpsPubSub) StdoutLine: {'line': b'Copying ../../build/gpsPubSub/gpsPubSub.egg-info to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/python3.10/site-packages/gpsPubSub-0.0.0-py3.10.egg-info\n'}
+[5.175841] (gpsPubSub) StdoutLine: {'line': b'running install_scripts\n'}
+[5.236128] (-) TimerEvent: {}
+[5.259642] (gpsPubSub) StdoutLine: {'line': b'Installing cov_comp script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.260561] (gpsPubSub) StdoutLine: {'line': b'Installing covariance script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.261361] (gpsPubSub) StdoutLine: {'line': b'Installing covariance_test script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.262241] (gpsPubSub) StdoutLine: {'line': b'Installing gps_odom script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.263068] (gpsPubSub) StdoutLine: {'line': b'Installing gps_publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.264009] (gpsPubSub) StdoutLine: {'line': b'Installing imu_publisher script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.264760] (gpsPubSub) StdoutLine: {'line': b'Installing position script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.265580] (gpsPubSub) StdoutLine: {'line': b'Installing subscriber script to /home/cewan/Automated-Tour-Car/ws_lidar/install/gpsPubSub/lib/gpsPubSub\n'}
+[5.268112] (gpsPubSub) StdoutLine: {'line': b"writing list of installed files to '/home/cewan/Automated-Tour-Car/ws_lidar/build/gpsPubSub/install.log'\n"}
+[5.336382] (-) TimerEvent: {}
+[5.390568] (gpsPubSub) CommandEnded: {'returncode': 0}
+[5.438375] (-) TimerEvent: {}
+[5.443101] (gpsPubSub) JobEnded: {'identifier': 'gpsPubSub', 'rc': 0}
+[5.448309] (-) EventReactorShutdown: {}

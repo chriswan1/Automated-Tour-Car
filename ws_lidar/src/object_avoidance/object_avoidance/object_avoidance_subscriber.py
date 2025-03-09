@@ -268,10 +268,17 @@ class CmdVelSubscriber(Node):
         linear_x = msg.linear.x  # Forward/backward speed
         angular_z = msg.angular.z  # Steering angle request
 
+        # if angular_z > 0:  # Left Turn
+        #     steering_angle = 35
+        # elif angular_z < 0:  # Right Turn
+        #     steering_angle = 15
+        # else:
+        #     steering_angle = 25  # Keep straight
+        # Convert angular velocity to servo angle (15° Right, 25° Center, 35° Left)
         if angular_z > 0:  # Left Turn
-            steering_angle = 35
+            steering_angle = 25 + (angular_z / 10) * 10  # Scale to range 25-35
         elif angular_z < 0:  # Right Turn
-            steering_angle = 15
+            steering_angle = 25 + (angular_z / 10) * 10  # Scale to range 25-15
         else:
             steering_angle = 25  # Keep straight
 
@@ -280,10 +287,10 @@ class CmdVelSubscriber(Node):
 
         if linear_x > 0:
             # Move forward
-            self.motor.setMotorModel(0, 2000, 0, 2000)
+            self.motor.setMotorModel(0, 1500, 0, 1500)
         elif linear_x < 0:
             # Move backward
-            self.motor.setMotorModel(0, -2000, 0, -2000)
+            self.motor.setMotorModel(0, -1500, 0, -1500)
         else:
             # Stop
             self.motor.setMotorModel(0, 0, 0, 0)
